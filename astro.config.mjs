@@ -15,6 +15,10 @@ export default defineConfig({
 					items: [{ autogenerate: { directory: 'getting-started' } }],
 				},
 				{
+					label: 'Combat',
+					items: [{ autogenerate: { directory: 'combat' } }],
+				},
+				{
 					label: 'Game systems',
 					items: [{ autogenerate: { directory: 'game-systems' } }],
 				},
