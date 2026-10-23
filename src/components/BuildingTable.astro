@@ -45,14 +45,23 @@ const totals = building.levels.reduce(
 );
 
 const nameOf = (t: string) => (data.names as Record<string, string>)[t] ?? t;
-const requirements = building.prerequisites.map((p: any) => {
-  const name = nameOf(p.type);
-  if (p.trailBehind != null) {
-    return `From level ${p.fromLevel} on, each upgrade needs ${name} at level (target level − ${p.trailBehind}) or higher.`;
+
+// What must already be built before upgrading to `level`, mirroring the game's own check:
+// the Stronghold must be at least that level (except for the Stronghold itself), and every
+// prerequisite that applies from `fromLevel` needs its building at a minimum level. A
+// prerequisite with `trailBehind` needs the building at (target level - trailBehind).
+function requiresFor(level: number): string {
+  const needed = new Map<string, number>();
+  const need = (t: string, lvl: number) => {
+    if (lvl > 0 && lvl > (needed.get(t) ?? 0)) needed.set(t, lvl);
+  };
+  if (type !== 'stronghold') need('stronghold', level);
+  for (const p of building!.prerequisites as any[]) {
+    if ((p.fromLevel ?? 1) > level) continue;
+    need(p.type, p.trailBehind != null ? level - p.trailBehind : p.minLevel ?? 0);
   }
-  if (p.fromLevel && p.fromLevel > 1) return `${name} level ${p.minLevel} before upgrading to level ${p.fromLevel}.`;
-  return `${name} level ${p.minLevel}.`;
-});
+  return [...needed.entries()].map(([t, lvl]) => `${nameOf(t)} ${lvl}`).join(', ') || '-';
+}
 ---
 
 <p>{building.description}</p>
@@ -62,22 +71,18 @@ const requirements = building.prerequisites.map((p: any) => {
   <li><strong>How many you can build:</strong> {building.maxCount}</li>
 </ul>
 
-<h2 id="requirements">Requirements</h2>
-{type !== 'stronghold' && <p>A building can never be upgraded past your Stronghold level.</p>}
-{requirements.length > 0 && (
-  <ul>
-    {requirements.map((r) => <li>{r}</li>)}
-  </ul>
-)}
-{requirements.length === 0 && type !== 'stronghold' && <p>No other requirements.</p>}
-
-<h2 id="costs-by-level">Cost and build time by level</h2>
+<h2 id="costs-by-level">Cost, requirements and build time by level</h2>
+<p>
+  The <strong>Requires</strong> column lists the buildings, and the level each must already have reached, before you can
+  upgrade to that level.{type !== 'stronghold' && ' A building can never be upgraded past your Stronghold level.'}
+</p>
 <div class="building-table-wrap">
   <table>
     <thead>
       <tr>
         <th>Level</th>
         {usedResources.map((r) => <th>{r.label}</th>)}
+        <th>Requires</th>
         <th>Build time</th>
         {effectKeys.map((k) => <th>{k}</th>)}
       </tr>
@@ -87,6 +92,7 @@ const requirements = building.prerequisites.map((p: any) => {
         <tr>
           <td>{l.level}</td>
           {usedResources.map((r) => <td>{fmt((l.cost as Record<string, number>)[r.key] ?? 0)}</td>)}
+          <td class="requires">{requiresFor(l.level)}</td>
           <td>{duration(l.seconds)}</td>
           {effectKeys.map((k) => {
             const v = (l.effects as Record<string, number | string>)[k];
@@ -99,6 +105,7 @@ const requirements = building.prerequisites.map((p: any) => {
       <tr>
         <th>Total, 1 to {building.maxLevel}</th>
         {usedResources.map((r) => <th>{fmt(totals[r.key])}</th>)}
+        <th></th>
         <th>{duration(totals.seconds)}</th>
         {effectKeys.map(() => <th></th>)}
       </tr>
@@ -118,6 +125,10 @@ const requirements = building.prerequisites.map((p: any) => {
   td,
   th {
     white-space: nowrap;
+  }
+  td.requires {
+    white-space: normal;
+    min-width: 12rem;
   }
   tfoot th {
     border-top: 2px solid var(--sl-color-gray-5);
