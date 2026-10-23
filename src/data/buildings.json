@@ -1,0 +1,6556 @@
+{
+  "names": {
+    "stronghold": "Stronghold",
+    "farm": "Farm",
+    "sawmill": "Sawmill",
+    "quarry": "Quarry",
+    "treasury": "Treasury",
+    "barracks": "Barracks",
+    "archery_range": "Archery Range",
+    "stable": "Stable",
+    "siege_workshop": "Siege Workshop",
+    "guardhouse": "Guardhouse",
+    "academy": "Academy",
+    "drill_grounds": "Drill Grounds",
+    "warehouse": "Warehouse",
+    "war_hall": "War Hall",
+    "embassy": "Embassy",
+    "lighthouse": "Lighthouse",
+    "hospital": "Hospital"
+  },
+  "buildings": [
+    {
+      "type": "stronghold",
+      "name": "Stronghold",
+      "description": "The heart of your kingdom. Upgrade to unlock buildings and raise your power.",
+      "category": "core",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "guardhouse",
+          "trailBehind": 1,
+          "fromLevel": 3
+        },
+        {
+          "type": "warehouse",
+          "minLevel": 10,
+          "fromLevel": 11
+        },
+        {
+          "type": "academy",
+          "minLevel": 5,
+          "fromLevel": 15
+        },
+        {
+          "type": "barracks",
+          "minLevel": 10,
+          "fromLevel": 20
+        },
+        {
+          "type": "archery_range",
+          "minLevel": 10,
+          "fromLevel": 20
+        },
+        {
+          "type": "stable",
+          "minLevel": 10,
+          "fromLevel": 20
+        },
+        {
+          "type": "siege_workshop",
+          "minLevel": 10,
+          "fromLevel": 20
+        },
+        {
+          "type": "drill_grounds",
+          "minLevel": 10,
+          "fromLevel": 25
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 200,
+            "food": 100,
+            "stone": 150,
+            "wood": 150
+          },
+          "seconds": 60,
+          "effects": {}
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 546,
+            "food": 286,
+            "stone": 418,
+            "wood": 430
+          },
+          "seconds": 291,
+          "effects": {}
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 1118,
+            "food": 615,
+            "stone": 873,
+            "wood": 923
+          },
+          "seconds": 796,
+          "effects": {}
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 2036,
+            "food": 1175,
+            "stone": 1621,
+            "wood": 1762
+          },
+          "seconds": 1718,
+          "effects": {}
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 3474,
+            "food": 2103,
+            "stone": 2822,
+            "wood": 3154
+          },
+          "seconds": 3259,
+          "effects": {}
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 5691,
+            "food": 3614,
+            "stone": 4717,
+            "wood": 5421
+          },
+          "seconds": 5698,
+          "effects": {}
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 9064,
+            "food": 6038,
+            "stone": 7666,
+            "wood": 9056
+          },
+          "seconds": 9416,
+          "effects": {}
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 14142,
+            "food": 9881,
+            "stone": 12202,
+            "wood": 14822
+          },
+          "seconds": 14931,
+          "effects": {}
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 21720,
+            "food": 15920,
+            "stone": 19119,
+            "wood": 23879
+          },
+          "seconds": 22943,
+          "effects": {}
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 32948,
+            "food": 25331,
+            "stone": 29588,
+            "wood": 37996
+          },
+          "seconds": 34388,
+          "effects": {}
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 49479,
+            "food": 39903,
+            "stone": 45332,
+            "wood": 59854
+          },
+          "seconds": 50518,
+          "effects": {}
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 73689,
+            "food": 62338,
+            "stone": 68878,
+            "wood": 93507
+          },
+          "seconds": 72992,
+          "effects": {}
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 108985,
+            "food": 96711,
+            "stone": 103929,
+            "wood": 145067
+          },
+          "seconds": 104004,
+          "effects": {}
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 160233,
+            "food": 149150,
+            "stone": 155888,
+            "wood": 223725
+          },
+          "seconds": 146443,
+          "effects": {}
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 234376,
+            "food": 228849,
+            "stone": 232632,
+            "wood": 343273
+          },
+          "seconds": 204101,
+          "effects": {}
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 341304,
+            "food": 349573,
+            "stone": 345612,
+            "wood": 524360
+          },
+          "seconds": 281939,
+          "effects": {}
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 495074,
+            "food": 531898,
+            "stone": 511458,
+            "wood": 797847
+          },
+          "seconds": 386423,
+          "effects": {}
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 715638,
+            "food": 806516,
+            "stone": 754268,
+            "wood": 1209774
+          },
+          "seconds": 525970,
+          "effects": {}
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 1031274,
+            "food": 1219145,
+            "stone": 1108916,
+            "wood": 1828718
+          },
+          "seconds": 711499,
+          "effects": {}
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 1482005,
+            "food": 1837778,
+            "stone": 1625799,
+            "wood": 2756667
+          },
+          "seconds": 957146,
+          "effects": {}
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 2124411,
+            "food": 2763399,
+            "stone": 2377651,
+            "wood": 4145098
+          },
+          "seconds": 1281172,
+          "effects": {}
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 3038375,
+            "food": 4145798,
+            "stone": 3469312,
+            "wood": 6218698
+          },
+          "seconds": 1707124,
+          "effects": {}
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 4336566,
+            "food": 6206897,
+            "stone": 5051733,
+            "wood": 9310346
+          },
+          "seconds": 2265303,
+          "effects": {}
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 6177729,
+            "food": 9275112,
+            "stone": 7342022,
+            "wood": 13912668
+          },
+          "seconds": 2994636,
+          "effects": {}
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 8785309,
+            "food": 13835955,
+            "stone": 10652126,
+            "wood": 20753933
+          },
+          "seconds": 3945049,
+          "effects": {}
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 12473544,
+            "food": 20606475,
+            "stone": 15429843,
+            "wood": 30909712
+          },
+          "seconds": 5180480,
+          "effects": {}
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 17683969,
+            "food": 30644697,
+            "stone": 22317411,
+            "wood": 45967046
+          },
+          "seconds": 6782686,
+          "effects": {}
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 25036491,
+            "food": 45510417,
+            "stone": 32235169,
+            "wood": 68265626
+          },
+          "seconds": 8856072,
+          "effects": {}
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 35400785,
+            "food": 67501278,
+            "stone": 46500946,
+            "wood": 101251918
+          },
+          "seconds": 11533787,
+          "effects": {}
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 49996041,
+            "food": 99999187,
+            "stone": 67000327,
+            "wood": 149998780
+          },
+          "seconds": 14985434,
+          "effects": {}
+        }
+      ]
+    },
+    {
+      "type": "farm",
+      "name": "Farm",
+      "description": "Feeds your people. Accumulates food over time — tap to collect.",
+      "category": "economic",
+      "maxLevel": 30,
+      "maxCount": 2,
+      "prerequisites": [],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 50,
+            "stone": 30,
+            "wood": 60
+          },
+          "seconds": 30,
+          "effects": {
+            "Output per hour": 365,
+            "Storage": 1095
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 122,
+            "stone": 73,
+            "wood": 147
+          },
+          "seconds": 134,
+          "effects": {
+            "Output per hour": 730,
+            "Storage": 2190
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 224,
+            "stone": 134,
+            "wood": 269
+          },
+          "seconds": 335,
+          "effects": {
+            "Output per hour": 1095,
+            "Storage": 3285
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 365,
+            "stone": 219,
+            "wood": 438
+          },
+          "seconds": 662,
+          "effects": {
+            "Output per hour": 1460,
+            "Storage": 4380
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 557,
+            "stone": 334,
+            "wood": 669
+          },
+          "seconds": 1152,
+          "effects": {
+            "Output per hour": 1825,
+            "Storage": 5475
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 817,
+            "stone": 490,
+            "wood": 980
+          },
+          "seconds": 1846,
+          "effects": {
+            "Output per hour": 2190,
+            "Storage": 6570
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 1164,
+            "stone": 699,
+            "wood": 1397
+          },
+          "seconds": 2797,
+          "effects": {
+            "Output per hour": 2555,
+            "Storage": 7665
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 1626,
+            "stone": 975,
+            "wood": 1951
+          },
+          "seconds": 4067,
+          "effects": {
+            "Output per hour": 2920,
+            "Storage": 8760
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 2235,
+            "stone": 1341,
+            "wood": 2681
+          },
+          "seconds": 5729,
+          "effects": {
+            "Output per hour": 3285,
+            "Storage": 9855
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 3033,
+            "stone": 1820,
+            "wood": 3640
+          },
+          "seconds": 7874,
+          "effects": {
+            "Output per hour": 3650,
+            "Storage": 10950
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 4077,
+            "stone": 2446,
+            "wood": 4892
+          },
+          "seconds": 10605,
+          "effects": {
+            "Output per hour": 4015,
+            "Storage": 12045
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 5434,
+            "stone": 3260,
+            "wood": 6521
+          },
+          "seconds": 14049,
+          "effects": {
+            "Output per hour": 4380,
+            "Storage": 13140
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 7192,
+            "stone": 4315,
+            "wood": 8631
+          },
+          "seconds": 18355,
+          "effects": {
+            "Output per hour": 4745,
+            "Storage": 14235
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 9464,
+            "stone": 5678,
+            "wood": 11356
+          },
+          "seconds": 23696,
+          "effects": {
+            "Output per hour": 5110,
+            "Storage": 15330
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 12388,
+            "stone": 7433,
+            "wood": 14866
+          },
+          "seconds": 30281,
+          "effects": {
+            "Output per hour": 5475,
+            "Storage": 16425
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 16145,
+            "stone": 9687,
+            "wood": 19374
+          },
+          "seconds": 38352,
+          "effects": {
+            "Output per hour": 5840,
+            "Storage": 17520
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 20959,
+            "stone": 12575,
+            "wood": 25150
+          },
+          "seconds": 48195,
+          "effects": {
+            "Output per hour": 6205,
+            "Storage": 18615
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 27113,
+            "stone": 16268,
+            "wood": 32536
+          },
+          "seconds": 60147,
+          "effects": {
+            "Output per hour": 6570,
+            "Storage": 19710
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 34967,
+            "stone": 20980,
+            "wood": 41961
+          },
+          "seconds": 74599,
+          "effects": {
+            "Output per hour": 6935,
+            "Storage": 20805
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 44971,
+            "stone": 26983,
+            "wood": 53965
+          },
+          "seconds": 92013,
+          "effects": {
+            "Output per hour": 7300,
+            "Storage": 21900
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 57693,
+            "stone": 34616,
+            "wood": 69231
+          },
+          "seconds": 112925,
+          "effects": {
+            "Output per hour": 7665,
+            "Storage": 22995
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 73845,
+            "stone": 44307,
+            "wood": 88614
+          },
+          "seconds": 137962,
+          "effects": {
+            "Output per hour": 8030,
+            "Storage": 24090
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 94324,
+            "stone": 56594,
+            "wood": 113189
+          },
+          "seconds": 167853,
+          "effects": {
+            "Output per hour": 8395,
+            "Storage": 25185
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 120255,
+            "stone": 72153,
+            "wood": 144306
+          },
+          "seconds": 203450,
+          "effects": {
+            "Output per hour": 8760,
+            "Storage": 26280
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 153048,
+            "stone": 91829,
+            "wood": 183658
+          },
+          "seconds": 245741,
+          "effects": {
+            "Output per hour": 9125,
+            "Storage": 27375
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 194472,
+            "stone": 116683,
+            "wood": 233367
+          },
+          "seconds": 295873,
+          "effects": {
+            "Output per hour": 9490,
+            "Storage": 28470
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 246743,
+            "stone": 148046,
+            "wood": 296091
+          },
+          "seconds": 355179,
+          "effects": {
+            "Output per hour": 9855,
+            "Storage": 29565
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 312633,
+            "stone": 187580,
+            "wood": 375160
+          },
+          "seconds": 425204,
+          "effects": {
+            "Output per hour": 10220,
+            "Storage": 30660
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 395614,
+            "stone": 237369,
+            "wood": 474737
+          },
+          "seconds": 507737,
+          "effects": {
+            "Output per hour": 10585,
+            "Storage": 31755
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 500025,
+            "stone": 300015,
+            "wood": 600030
+          },
+          "seconds": 604849,
+          "effects": {
+            "Output per hour": 10950,
+            "Storage": 32850
+          }
+        }
+      ]
+    },
+    {
+      "type": "sawmill",
+      "name": "Sawmill",
+      "description": "Cuts timber for construction. Accumulates wood — tap to collect.",
+      "category": "economic",
+      "maxLevel": 30,
+      "maxCount": 2,
+      "prerequisites": [],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 50,
+            "food": 30,
+            "stone": 40
+          },
+          "seconds": 30,
+          "effects": {
+            "Output per hour": 550,
+            "Storage": 1650
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 122,
+            "food": 73,
+            "stone": 98
+          },
+          "seconds": 134,
+          "effects": {
+            "Output per hour": 1100,
+            "Storage": 3300
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 224,
+            "food": 134,
+            "stone": 179
+          },
+          "seconds": 335,
+          "effects": {
+            "Output per hour": 1650,
+            "Storage": 4950
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 365,
+            "food": 219,
+            "stone": 292
+          },
+          "seconds": 662,
+          "effects": {
+            "Output per hour": 2200,
+            "Storage": 6600
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 557,
+            "food": 334,
+            "stone": 446
+          },
+          "seconds": 1152,
+          "effects": {
+            "Output per hour": 2750,
+            "Storage": 8250
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 817,
+            "food": 490,
+            "stone": 653
+          },
+          "seconds": 1846,
+          "effects": {
+            "Output per hour": 3300,
+            "Storage": 9900
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 1164,
+            "food": 699,
+            "stone": 931
+          },
+          "seconds": 2797,
+          "effects": {
+            "Output per hour": 3850,
+            "Storage": 11550
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 1626,
+            "food": 975,
+            "stone": 1301
+          },
+          "seconds": 4067,
+          "effects": {
+            "Output per hour": 4400,
+            "Storage": 13200
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 2235,
+            "food": 1341,
+            "stone": 1788
+          },
+          "seconds": 5729,
+          "effects": {
+            "Output per hour": 4950,
+            "Storage": 14850
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 3033,
+            "food": 1820,
+            "stone": 2427
+          },
+          "seconds": 7874,
+          "effects": {
+            "Output per hour": 5500,
+            "Storage": 16500
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 4077,
+            "food": 2446,
+            "stone": 3262
+          },
+          "seconds": 10605,
+          "effects": {
+            "Output per hour": 6050,
+            "Storage": 18150
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 5434,
+            "food": 3260,
+            "stone": 4347
+          },
+          "seconds": 14049,
+          "effects": {
+            "Output per hour": 6600,
+            "Storage": 19800
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 7192,
+            "food": 4315,
+            "stone": 5754
+          },
+          "seconds": 18355,
+          "effects": {
+            "Output per hour": 7150,
+            "Storage": 21450
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 9464,
+            "food": 5678,
+            "stone": 7571
+          },
+          "seconds": 23696,
+          "effects": {
+            "Output per hour": 7700,
+            "Storage": 23100
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 12388,
+            "food": 7433,
+            "stone": 9911
+          },
+          "seconds": 30281,
+          "effects": {
+            "Output per hour": 8250,
+            "Storage": 24750
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 16145,
+            "food": 9687,
+            "stone": 12916
+          },
+          "seconds": 38352,
+          "effects": {
+            "Output per hour": 8800,
+            "Storage": 26400
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 20959,
+            "food": 12575,
+            "stone": 16767
+          },
+          "seconds": 48195,
+          "effects": {
+            "Output per hour": 9350,
+            "Storage": 28050
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 27113,
+            "food": 16268,
+            "stone": 21691
+          },
+          "seconds": 60147,
+          "effects": {
+            "Output per hour": 9900,
+            "Storage": 29700
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 34967,
+            "food": 20980,
+            "stone": 27974
+          },
+          "seconds": 74599,
+          "effects": {
+            "Output per hour": 10450,
+            "Storage": 31350
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 44971,
+            "food": 26983,
+            "stone": 35977
+          },
+          "seconds": 92013,
+          "effects": {
+            "Output per hour": 11000,
+            "Storage": 33000
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 57693,
+            "food": 34616,
+            "stone": 46154
+          },
+          "seconds": 112925,
+          "effects": {
+            "Output per hour": 11550,
+            "Storage": 34650
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 73845,
+            "food": 44307,
+            "stone": 59076
+          },
+          "seconds": 137962,
+          "effects": {
+            "Output per hour": 12100,
+            "Storage": 36300
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 94324,
+            "food": 56594,
+            "stone": 75459
+          },
+          "seconds": 167853,
+          "effects": {
+            "Output per hour": 12650,
+            "Storage": 37950
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 120255,
+            "food": 72153,
+            "stone": 96204
+          },
+          "seconds": 203450,
+          "effects": {
+            "Output per hour": 13200,
+            "Storage": 39600
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 153048,
+            "food": 91829,
+            "stone": 122438
+          },
+          "seconds": 245741,
+          "effects": {
+            "Output per hour": 13750,
+            "Storage": 41250
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 194472,
+            "food": 116683,
+            "stone": 155578
+          },
+          "seconds": 295873,
+          "effects": {
+            "Output per hour": 14300,
+            "Storage": 42900
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 246743,
+            "food": 148046,
+            "stone": 197394
+          },
+          "seconds": 355179,
+          "effects": {
+            "Output per hour": 14850,
+            "Storage": 44550
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 312633,
+            "food": 187580,
+            "stone": 250107
+          },
+          "seconds": 425204,
+          "effects": {
+            "Output per hour": 15400,
+            "Storage": 46200
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 395614,
+            "food": 237369,
+            "stone": 316491
+          },
+          "seconds": 507737,
+          "effects": {
+            "Output per hour": 15950,
+            "Storage": 47850
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 500025,
+            "food": 300015,
+            "stone": 400020
+          },
+          "seconds": 604849,
+          "effects": {
+            "Output per hour": 16500,
+            "Storage": 49500
+          }
+        }
+      ]
+    },
+    {
+      "type": "quarry",
+      "name": "Quarry",
+      "description": "Mines stone from the earth. Accumulates stone — tap to collect.",
+      "category": "economic",
+      "maxLevel": 30,
+      "maxCount": 2,
+      "prerequisites": [],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 50,
+            "food": 30,
+            "wood": 40
+          },
+          "seconds": 30,
+          "effects": {
+            "Output per hour": 260,
+            "Storage": 780
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 122,
+            "food": 73,
+            "wood": 98
+          },
+          "seconds": 134,
+          "effects": {
+            "Output per hour": 520,
+            "Storage": 1560
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 224,
+            "food": 134,
+            "wood": 179
+          },
+          "seconds": 335,
+          "effects": {
+            "Output per hour": 780,
+            "Storage": 2340
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 365,
+            "food": 219,
+            "wood": 292
+          },
+          "seconds": 662,
+          "effects": {
+            "Output per hour": 1040,
+            "Storage": 3120
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 557,
+            "food": 334,
+            "wood": 446
+          },
+          "seconds": 1152,
+          "effects": {
+            "Output per hour": 1300,
+            "Storage": 3900
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 817,
+            "food": 490,
+            "wood": 653
+          },
+          "seconds": 1846,
+          "effects": {
+            "Output per hour": 1560,
+            "Storage": 4680
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 1164,
+            "food": 699,
+            "wood": 931
+          },
+          "seconds": 2797,
+          "effects": {
+            "Output per hour": 1820,
+            "Storage": 5460
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 1626,
+            "food": 975,
+            "wood": 1301
+          },
+          "seconds": 4067,
+          "effects": {
+            "Output per hour": 2080,
+            "Storage": 6240
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 2235,
+            "food": 1341,
+            "wood": 1788
+          },
+          "seconds": 5729,
+          "effects": {
+            "Output per hour": 2340,
+            "Storage": 7020
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 3033,
+            "food": 1820,
+            "wood": 2427
+          },
+          "seconds": 7874,
+          "effects": {
+            "Output per hour": 2600,
+            "Storage": 7800
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 4077,
+            "food": 2446,
+            "wood": 3262
+          },
+          "seconds": 10605,
+          "effects": {
+            "Output per hour": 2860,
+            "Storage": 8580
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 5434,
+            "food": 3260,
+            "wood": 4347
+          },
+          "seconds": 14049,
+          "effects": {
+            "Output per hour": 3120,
+            "Storage": 9360
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 7192,
+            "food": 4315,
+            "wood": 5754
+          },
+          "seconds": 18355,
+          "effects": {
+            "Output per hour": 3380,
+            "Storage": 10140
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 9464,
+            "food": 5678,
+            "wood": 7571
+          },
+          "seconds": 23696,
+          "effects": {
+            "Output per hour": 3640,
+            "Storage": 10920
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 12388,
+            "food": 7433,
+            "wood": 9911
+          },
+          "seconds": 30281,
+          "effects": {
+            "Output per hour": 3900,
+            "Storage": 11700
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 16145,
+            "food": 9687,
+            "wood": 12916
+          },
+          "seconds": 38352,
+          "effects": {
+            "Output per hour": 4160,
+            "Storage": 12480
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 20959,
+            "food": 12575,
+            "wood": 16767
+          },
+          "seconds": 48195,
+          "effects": {
+            "Output per hour": 4420,
+            "Storage": 13260
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 27113,
+            "food": 16268,
+            "wood": 21691
+          },
+          "seconds": 60147,
+          "effects": {
+            "Output per hour": 4680,
+            "Storage": 14040
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 34967,
+            "food": 20980,
+            "wood": 27974
+          },
+          "seconds": 74599,
+          "effects": {
+            "Output per hour": 4940,
+            "Storage": 14820
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 44971,
+            "food": 26983,
+            "wood": 35977
+          },
+          "seconds": 92013,
+          "effects": {
+            "Output per hour": 5200,
+            "Storage": 15600
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 57693,
+            "food": 34616,
+            "wood": 46154
+          },
+          "seconds": 112925,
+          "effects": {
+            "Output per hour": 5460,
+            "Storage": 16380
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 73845,
+            "food": 44307,
+            "wood": 59076
+          },
+          "seconds": 137962,
+          "effects": {
+            "Output per hour": 5720,
+            "Storage": 17160
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 94324,
+            "food": 56594,
+            "wood": 75459
+          },
+          "seconds": 167853,
+          "effects": {
+            "Output per hour": 5980,
+            "Storage": 17940
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 120255,
+            "food": 72153,
+            "wood": 96204
+          },
+          "seconds": 203450,
+          "effects": {
+            "Output per hour": 6240,
+            "Storage": 18720
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 153048,
+            "food": 91829,
+            "wood": 122438
+          },
+          "seconds": 245741,
+          "effects": {
+            "Output per hour": 6500,
+            "Storage": 19500
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 194472,
+            "food": 116683,
+            "wood": 155578
+          },
+          "seconds": 295873,
+          "effects": {
+            "Output per hour": 6760,
+            "Storage": 20280
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 246743,
+            "food": 148046,
+            "wood": 197394
+          },
+          "seconds": 355179,
+          "effects": {
+            "Output per hour": 7020,
+            "Storage": 21060
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 312633,
+            "food": 187580,
+            "wood": 250107
+          },
+          "seconds": 425204,
+          "effects": {
+            "Output per hour": 7280,
+            "Storage": 21840
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 395614,
+            "food": 237369,
+            "wood": 316491
+          },
+          "seconds": 507737,
+          "effects": {
+            "Output per hour": 7540,
+            "Storage": 22620
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 500025,
+            "food": 300015,
+            "wood": 400020
+          },
+          "seconds": 604849,
+          "effects": {
+            "Output per hour": 7800,
+            "Storage": 23400
+          }
+        }
+      ]
+    },
+    {
+      "type": "treasury",
+      "name": "Treasury",
+      "description": "Collects taxes from your subjects. Accumulates gold — tap to collect.",
+      "category": "economic",
+      "maxLevel": 30,
+      "maxCount": 2,
+      "prerequisites": [],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "food": 50,
+            "stone": 60,
+            "wood": 60
+          },
+          "seconds": 30,
+          "effects": {
+            "Output per hour": 200,
+            "Storage": 600
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "food": 122,
+            "stone": 147,
+            "wood": 147
+          },
+          "seconds": 134,
+          "effects": {
+            "Output per hour": 400,
+            "Storage": 1200
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "food": 224,
+            "stone": 269,
+            "wood": 269
+          },
+          "seconds": 335,
+          "effects": {
+            "Output per hour": 600,
+            "Storage": 1800
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "food": 365,
+            "stone": 438,
+            "wood": 438
+          },
+          "seconds": 662,
+          "effects": {
+            "Output per hour": 800,
+            "Storage": 2400
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "food": 557,
+            "stone": 669,
+            "wood": 669
+          },
+          "seconds": 1152,
+          "effects": {
+            "Output per hour": 1000,
+            "Storage": 3000
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "food": 817,
+            "stone": 980,
+            "wood": 980
+          },
+          "seconds": 1846,
+          "effects": {
+            "Output per hour": 1200,
+            "Storage": 3600
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "food": 1164,
+            "stone": 1397,
+            "wood": 1397
+          },
+          "seconds": 2797,
+          "effects": {
+            "Output per hour": 1400,
+            "Storage": 4200
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "food": 1626,
+            "stone": 1951,
+            "wood": 1951
+          },
+          "seconds": 4067,
+          "effects": {
+            "Output per hour": 1600,
+            "Storage": 4800
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "food": 2235,
+            "stone": 2681,
+            "wood": 2681
+          },
+          "seconds": 5729,
+          "effects": {
+            "Output per hour": 1800,
+            "Storage": 5400
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "food": 3033,
+            "stone": 3640,
+            "wood": 3640
+          },
+          "seconds": 7874,
+          "effects": {
+            "Output per hour": 2000,
+            "Storage": 6000
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "food": 4077,
+            "stone": 4892,
+            "wood": 4892
+          },
+          "seconds": 10605,
+          "effects": {
+            "Output per hour": 2200,
+            "Storage": 6600
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "food": 5434,
+            "stone": 6521,
+            "wood": 6521
+          },
+          "seconds": 14049,
+          "effects": {
+            "Output per hour": 2400,
+            "Storage": 7200
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "food": 7192,
+            "stone": 8631,
+            "wood": 8631
+          },
+          "seconds": 18355,
+          "effects": {
+            "Output per hour": 2600,
+            "Storage": 7800
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "food": 9464,
+            "stone": 11356,
+            "wood": 11356
+          },
+          "seconds": 23696,
+          "effects": {
+            "Output per hour": 2800,
+            "Storage": 8400
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "food": 12388,
+            "stone": 14866,
+            "wood": 14866
+          },
+          "seconds": 30281,
+          "effects": {
+            "Output per hour": 3000,
+            "Storage": 9000
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "food": 16145,
+            "stone": 19374,
+            "wood": 19374
+          },
+          "seconds": 38352,
+          "effects": {
+            "Output per hour": 3200,
+            "Storage": 9600
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "food": 20959,
+            "stone": 25150,
+            "wood": 25150
+          },
+          "seconds": 48195,
+          "effects": {
+            "Output per hour": 3400,
+            "Storage": 10200
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "food": 27113,
+            "stone": 32536,
+            "wood": 32536
+          },
+          "seconds": 60147,
+          "effects": {
+            "Output per hour": 3600,
+            "Storage": 10800
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "food": 34967,
+            "stone": 41961,
+            "wood": 41961
+          },
+          "seconds": 74599,
+          "effects": {
+            "Output per hour": 3800,
+            "Storage": 11400
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "food": 44971,
+            "stone": 53965,
+            "wood": 53965
+          },
+          "seconds": 92013,
+          "effects": {
+            "Output per hour": 4000,
+            "Storage": 12000
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "food": 57693,
+            "stone": 69231,
+            "wood": 69231
+          },
+          "seconds": 112925,
+          "effects": {
+            "Output per hour": 4200,
+            "Storage": 12600
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "food": 73845,
+            "stone": 88614,
+            "wood": 88614
+          },
+          "seconds": 137962,
+          "effects": {
+            "Output per hour": 4400,
+            "Storage": 13200
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "food": 94324,
+            "stone": 113189,
+            "wood": 113189
+          },
+          "seconds": 167853,
+          "effects": {
+            "Output per hour": 4600,
+            "Storage": 13800
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "food": 120255,
+            "stone": 144306,
+            "wood": 144306
+          },
+          "seconds": 203450,
+          "effects": {
+            "Output per hour": 4800,
+            "Storage": 14400
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "food": 153048,
+            "stone": 183658,
+            "wood": 183658
+          },
+          "seconds": 245741,
+          "effects": {
+            "Output per hour": 5000,
+            "Storage": 15000
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "food": 194472,
+            "stone": 233367,
+            "wood": 233367
+          },
+          "seconds": 295873,
+          "effects": {
+            "Output per hour": 5200,
+            "Storage": 15600
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "food": 246743,
+            "stone": 296091,
+            "wood": 296091
+          },
+          "seconds": 355179,
+          "effects": {
+            "Output per hour": 5400,
+            "Storage": 16200
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "food": 312633,
+            "stone": 375160,
+            "wood": 375160
+          },
+          "seconds": 425204,
+          "effects": {
+            "Output per hour": 5600,
+            "Storage": 16800
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "food": 395614,
+            "stone": 474737,
+            "wood": 474737
+          },
+          "seconds": 507737,
+          "effects": {
+            "Output per hour": 5800,
+            "Storage": 17400
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "food": 500025,
+            "stone": 600030,
+            "wood": 600030
+          },
+          "seconds": 604849,
+          "effects": {
+            "Output per hour": 6000,
+            "Storage": 18000
+          }
+        }
+      ]
+    },
+    {
+      "type": "barracks",
+      "name": "Barracks",
+      "description": "Trains Infantry troops. Upgrade to unlock higher-tier infantry.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 2
+        },
+        {
+          "type": "guardhouse",
+          "minLevel": 2,
+          "fromLevel": 2
+        },
+        {
+          "type": "guardhouse",
+          "minLevel": 3,
+          "fromLevel": 3
+        },
+        {
+          "type": "stable",
+          "minLevel": 3,
+          "fromLevel": 3
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 100,
+            "stone": 80,
+            "wood": 80
+          },
+          "seconds": 60,
+          "effects": {
+            "Training speed bonus": "1%"
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 244,
+            "stone": 195,
+            "wood": 195
+          },
+          "seconds": 267,
+          "effects": {
+            "Training speed bonus": "2%"
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 448,
+            "stone": 358,
+            "wood": 358
+          },
+          "seconds": 669,
+          "effects": {
+            "Training speed bonus": "3%"
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 730,
+            "stone": 584,
+            "wood": 584
+          },
+          "seconds": 1324,
+          "effects": {
+            "Training speed bonus": "4%"
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1114,
+            "stone": 891,
+            "wood": 891
+          },
+          "seconds": 2303,
+          "effects": {
+            "Training speed bonus": "5%"
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 1634,
+            "stone": 1307,
+            "wood": 1307
+          },
+          "seconds": 3692,
+          "effects": {
+            "Training speed bonus": "6%"
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 2329,
+            "stone": 1863,
+            "wood": 1863
+          },
+          "seconds": 5594,
+          "effects": {
+            "Training speed bonus": "7%"
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 3251,
+            "stone": 2601,
+            "wood": 2601
+          },
+          "seconds": 8133,
+          "effects": {
+            "Training speed bonus": "8%"
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 4469,
+            "stone": 3575,
+            "wood": 3575
+          },
+          "seconds": 11459,
+          "effects": {
+            "Training speed bonus": "9%"
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 6067,
+            "stone": 4854,
+            "wood": 4854
+          },
+          "seconds": 15747,
+          "effects": {
+            "Training speed bonus": "10%"
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 8154,
+            "stone": 6523,
+            "wood": 6523
+          },
+          "seconds": 21211,
+          "effects": {
+            "Training speed bonus": "11%"
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 10868,
+            "stone": 8694,
+            "wood": 8694
+          },
+          "seconds": 28099,
+          "effects": {
+            "Training speed bonus": "12%"
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 14385,
+            "stone": 11508,
+            "wood": 11508
+          },
+          "seconds": 36709,
+          "effects": {
+            "Training speed bonus": "13%"
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 18927,
+            "stone": 15142,
+            "wood": 15142
+          },
+          "seconds": 47392,
+          "effects": {
+            "Training speed bonus": "14%"
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 24777,
+            "stone": 19821,
+            "wood": 19821
+          },
+          "seconds": 60561,
+          "effects": {
+            "Training speed bonus": "15%"
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 32290,
+            "stone": 25832,
+            "wood": 25832
+          },
+          "seconds": 76703,
+          "effects": {
+            "Training speed bonus": "16%"
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 41917,
+            "stone": 33534,
+            "wood": 33534
+          },
+          "seconds": 96390,
+          "effects": {
+            "Training speed bonus": "17%"
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 54227,
+            "stone": 43381,
+            "wood": 43381
+          },
+          "seconds": 120293,
+          "effects": {
+            "Training speed bonus": "18%"
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 69935,
+            "stone": 55948,
+            "wood": 55948
+          },
+          "seconds": 149199,
+          "effects": {
+            "Training speed bonus": "19%"
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 89942,
+            "stone": 71954,
+            "wood": 71954
+          },
+          "seconds": 184026,
+          "effects": {
+            "Training speed bonus": "20%"
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 115385,
+            "stone": 92308,
+            "wood": 92308
+          },
+          "seconds": 225850,
+          "effects": {
+            "Training speed bonus": "21%"
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 147690,
+            "stone": 118152,
+            "wood": 118152
+          },
+          "seconds": 275923,
+          "effects": {
+            "Training speed bonus": "22%"
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 188648,
+            "stone": 150918,
+            "wood": 150918
+          },
+          "seconds": 335707,
+          "effects": {
+            "Training speed bonus": "23%"
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 240510,
+            "stone": 192408,
+            "wood": 192408
+          },
+          "seconds": 406900,
+          "effects": {
+            "Training speed bonus": "24%"
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 306096,
+            "stone": 244877,
+            "wood": 244877
+          },
+          "seconds": 491481,
+          "effects": {
+            "Training speed bonus": "25%"
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 388944,
+            "stone": 311156,
+            "wood": 311156
+          },
+          "seconds": 591746,
+          "effects": {
+            "Training speed bonus": "26%"
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 493486,
+            "stone": 394788,
+            "wood": 394788
+          },
+          "seconds": 710359,
+          "effects": {
+            "Training speed bonus": "27%"
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 625267,
+            "stone": 500213,
+            "wood": 500213
+          },
+          "seconds": 850409,
+          "effects": {
+            "Training speed bonus": "28%"
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 791228,
+            "stone": 632983,
+            "wood": 632983
+          },
+          "seconds": 1015475,
+          "effects": {
+            "Training speed bonus": "29%"
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 1000050,
+            "stone": 800040,
+            "wood": 800040
+          },
+          "seconds": 1209698,
+          "effects": {
+            "Training speed bonus": "30%"
+          }
+        }
+      ]
+    },
+    {
+      "type": "archery_range",
+      "name": "Archery Range",
+      "description": "Trains Archer troops. Upgrade to unlock higher-tier archers.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 2
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 90,
+            "stone": 60,
+            "wood": 100
+          },
+          "seconds": 60,
+          "effects": {
+            "Training speed bonus": "1%"
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 220,
+            "stone": 147,
+            "wood": 244
+          },
+          "seconds": 267,
+          "effects": {
+            "Training speed bonus": "2%"
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 403,
+            "stone": 269,
+            "wood": 448
+          },
+          "seconds": 669,
+          "effects": {
+            "Training speed bonus": "3%"
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 657,
+            "stone": 438,
+            "wood": 730
+          },
+          "seconds": 1324,
+          "effects": {
+            "Training speed bonus": "4%"
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1003,
+            "stone": 669,
+            "wood": 1114
+          },
+          "seconds": 2303,
+          "effects": {
+            "Training speed bonus": "5%"
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 1470,
+            "stone": 980,
+            "wood": 1634
+          },
+          "seconds": 3692,
+          "effects": {
+            "Training speed bonus": "6%"
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 2096,
+            "stone": 1397,
+            "wood": 2329
+          },
+          "seconds": 5594,
+          "effects": {
+            "Training speed bonus": "7%"
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 2926,
+            "stone": 1951,
+            "wood": 3251
+          },
+          "seconds": 8133,
+          "effects": {
+            "Training speed bonus": "8%"
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 4022,
+            "stone": 2681,
+            "wood": 4469
+          },
+          "seconds": 11459,
+          "effects": {
+            "Training speed bonus": "9%"
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 5460,
+            "stone": 3640,
+            "wood": 6067
+          },
+          "seconds": 15747,
+          "effects": {
+            "Training speed bonus": "10%"
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 7338,
+            "stone": 4892,
+            "wood": 8154
+          },
+          "seconds": 21211,
+          "effects": {
+            "Training speed bonus": "11%"
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 9781,
+            "stone": 6521,
+            "wood": 10868
+          },
+          "seconds": 28099,
+          "effects": {
+            "Training speed bonus": "12%"
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 12946,
+            "stone": 8631,
+            "wood": 14385
+          },
+          "seconds": 36709,
+          "effects": {
+            "Training speed bonus": "13%"
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 17034,
+            "stone": 11356,
+            "wood": 18927
+          },
+          "seconds": 47392,
+          "effects": {
+            "Training speed bonus": "14%"
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 22299,
+            "stone": 14866,
+            "wood": 24777
+          },
+          "seconds": 60561,
+          "effects": {
+            "Training speed bonus": "15%"
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 29061,
+            "stone": 19374,
+            "wood": 32290
+          },
+          "seconds": 76703,
+          "effects": {
+            "Training speed bonus": "16%"
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 37726,
+            "stone": 25150,
+            "wood": 41917
+          },
+          "seconds": 96390,
+          "effects": {
+            "Training speed bonus": "17%"
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 48804,
+            "stone": 32536,
+            "wood": 54227
+          },
+          "seconds": 120293,
+          "effects": {
+            "Training speed bonus": "18%"
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 62941,
+            "stone": 41961,
+            "wood": 69935
+          },
+          "seconds": 149199,
+          "effects": {
+            "Training speed bonus": "19%"
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 80948,
+            "stone": 53965,
+            "wood": 89942
+          },
+          "seconds": 184026,
+          "effects": {
+            "Training speed bonus": "20%"
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 103847,
+            "stone": 69231,
+            "wood": 115385
+          },
+          "seconds": 225850,
+          "effects": {
+            "Training speed bonus": "21%"
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 132921,
+            "stone": 88614,
+            "wood": 147690
+          },
+          "seconds": 275923,
+          "effects": {
+            "Training speed bonus": "22%"
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 169783,
+            "stone": 113189,
+            "wood": 188648
+          },
+          "seconds": 335707,
+          "effects": {
+            "Training speed bonus": "23%"
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 216459,
+            "stone": 144306,
+            "wood": 240510
+          },
+          "seconds": 406900,
+          "effects": {
+            "Training speed bonus": "24%"
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 275486,
+            "stone": 183658,
+            "wood": 306096
+          },
+          "seconds": 491481,
+          "effects": {
+            "Training speed bonus": "25%"
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 350050,
+            "stone": 233367,
+            "wood": 388944
+          },
+          "seconds": 591746,
+          "effects": {
+            "Training speed bonus": "26%"
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 444137,
+            "stone": 296091,
+            "wood": 493486
+          },
+          "seconds": 710359,
+          "effects": {
+            "Training speed bonus": "27%"
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 562740,
+            "stone": 375160,
+            "wood": 625267
+          },
+          "seconds": 850409,
+          "effects": {
+            "Training speed bonus": "28%"
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 712106,
+            "stone": 474737,
+            "wood": 791228
+          },
+          "seconds": 1015475,
+          "effects": {
+            "Training speed bonus": "29%"
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 900045,
+            "stone": 600030,
+            "wood": 1000050
+          },
+          "seconds": 1209698,
+          "effects": {
+            "Training speed bonus": "30%"
+          }
+        }
+      ]
+    },
+    {
+      "type": "stable",
+      "name": "Stable",
+      "description": "Trains Cavalry troops. Upgrade to unlock higher-tier cavalry.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 3
+        },
+        {
+          "type": "barracks",
+          "minLevel": 2
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 120,
+            "food": 50,
+            "stone": 70,
+            "wood": 90
+          },
+          "seconds": 80,
+          "effects": {
+            "Training speed bonus": "1%"
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 293,
+            "food": 122,
+            "stone": 171,
+            "wood": 220
+          },
+          "seconds": 354,
+          "effects": {
+            "Training speed bonus": "2%"
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 537,
+            "food": 224,
+            "stone": 313,
+            "wood": 403
+          },
+          "seconds": 883,
+          "effects": {
+            "Training speed bonus": "3%"
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 875,
+            "food": 365,
+            "stone": 511,
+            "wood": 657
+          },
+          "seconds": 1738,
+          "effects": {
+            "Training speed bonus": "4%"
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1337,
+            "food": 557,
+            "stone": 780,
+            "wood": 1003
+          },
+          "seconds": 3006,
+          "effects": {
+            "Training speed bonus": "5%"
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 1960,
+            "food": 817,
+            "stone": 1143,
+            "wood": 1470
+          },
+          "seconds": 4794,
+          "effects": {
+            "Training speed bonus": "6%"
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 2794,
+            "food": 1164,
+            "stone": 1630,
+            "wood": 2096
+          },
+          "seconds": 7224,
+          "effects": {
+            "Training speed bonus": "7%"
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 3902,
+            "food": 1626,
+            "stone": 2276,
+            "wood": 2926
+          },
+          "seconds": 10448,
+          "effects": {
+            "Training speed bonus": "8%"
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 5363,
+            "food": 2235,
+            "stone": 3128,
+            "wood": 4022
+          },
+          "seconds": 14642,
+          "effects": {
+            "Training speed bonus": "9%"
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 7280,
+            "food": 3033,
+            "stone": 4247,
+            "wood": 5460
+          },
+          "seconds": 20016,
+          "effects": {
+            "Training speed bonus": "10%"
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 9785,
+            "food": 4077,
+            "stone": 5708,
+            "wood": 7338
+          },
+          "seconds": 26817,
+          "effects": {
+            "Training speed bonus": "11%"
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 13041,
+            "food": 5434,
+            "stone": 7607,
+            "wood": 9781
+          },
+          "seconds": 35338,
+          "effects": {
+            "Training speed bonus": "12%"
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 17262,
+            "food": 7192,
+            "stone": 10069,
+            "wood": 12946
+          },
+          "seconds": 45922,
+          "effects": {
+            "Training speed bonus": "13%"
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 22712,
+            "food": 9464,
+            "stone": 13249,
+            "wood": 17034
+          },
+          "seconds": 58971,
+          "effects": {
+            "Training speed bonus": "14%"
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 29732,
+            "food": 12388,
+            "stone": 17344,
+            "wood": 22299
+          },
+          "seconds": 74959,
+          "effects": {
+            "Training speed bonus": "15%"
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 38748,
+            "food": 16145,
+            "stone": 22603,
+            "wood": 29061
+          },
+          "seconds": 94435,
+          "effects": {
+            "Training speed bonus": "16%"
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 50301,
+            "food": 20959,
+            "stone": 29342,
+            "wood": 37726
+          },
+          "seconds": 118044,
+          "effects": {
+            "Training speed bonus": "17%"
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 65072,
+            "food": 27113,
+            "stone": 37959,
+            "wood": 48804
+          },
+          "seconds": 146536,
+          "effects": {
+            "Training speed bonus": "18%"
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 83921,
+            "food": 34967,
+            "stone": 48954,
+            "wood": 62941
+          },
+          "seconds": 180784,
+          "effects": {
+            "Training speed bonus": "19%"
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 107931,
+            "food": 44971,
+            "stone": 62960,
+            "wood": 80948
+          },
+          "seconds": 221803,
+          "effects": {
+            "Training speed bonus": "20%"
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 138462,
+            "food": 57693,
+            "stone": 80770,
+            "wood": 103847
+          },
+          "seconds": 270769,
+          "effects": {
+            "Training speed bonus": "21%"
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 177228,
+            "food": 73845,
+            "stone": 103383,
+            "wood": 132921
+          },
+          "seconds": 329048,
+          "effects": {
+            "Training speed bonus": "22%"
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 226378,
+            "food": 94324,
+            "stone": 132054,
+            "wood": 169783
+          },
+          "seconds": 398220,
+          "effects": {
+            "Training speed bonus": "23%"
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 288611,
+            "food": 120255,
+            "stone": 168357,
+            "wood": 216459
+          },
+          "seconds": 480113,
+          "effects": {
+            "Training speed bonus": "24%"
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 367315,
+            "food": 153048,
+            "stone": 214267,
+            "wood": 275486
+          },
+          "seconds": 576839,
+          "effects": {
+            "Training speed bonus": "25%"
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 466733,
+            "food": 194472,
+            "stone": 272261,
+            "wood": 350050
+          },
+          "seconds": 690836,
+          "effects": {
+            "Training speed bonus": "26%"
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 592183,
+            "food": 246743,
+            "stone": 345440,
+            "wood": 444137
+          },
+          "seconds": 824915,
+          "effects": {
+            "Training speed bonus": "27%"
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 750320,
+            "food": 312633,
+            "stone": 437687,
+            "wood": 562740
+          },
+          "seconds": 982317,
+          "effects": {
+            "Training speed bonus": "28%"
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 949474,
+            "food": 395614,
+            "stone": 553860,
+            "wood": 712106
+          },
+          "seconds": 1166769,
+          "effects": {
+            "Training speed bonus": "29%"
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 1200060,
+            "food": 500025,
+            "stone": 700035,
+            "wood": 900045
+          },
+          "seconds": 1382563,
+          "effects": {
+            "Training speed bonus": "30%"
+          }
+        }
+      ]
+    },
+    {
+      "type": "siege_workshop",
+      "name": "Siege Workshop",
+      "description": "Builds Siege engines. Upgrade to unlock higher-tier siege weapons.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 4
+        },
+        {
+          "type": "stable",
+          "minLevel": 2
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 150,
+            "stone": 120,
+            "wood": 120
+          },
+          "seconds": 100,
+          "effects": {
+            "Training speed bonus": "1%"
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 367,
+            "stone": 293,
+            "wood": 293
+          },
+          "seconds": 443,
+          "effects": {
+            "Training speed bonus": "2%"
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 672,
+            "stone": 537,
+            "wood": 537
+          },
+          "seconds": 1103,
+          "effects": {
+            "Training speed bonus": "3%"
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 1094,
+            "stone": 875,
+            "wood": 875
+          },
+          "seconds": 2172,
+          "effects": {
+            "Training speed bonus": "4%"
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1671,
+            "stone": 1337,
+            "wood": 1337
+          },
+          "seconds": 3758,
+          "effects": {
+            "Training speed bonus": "5%"
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 2450,
+            "stone": 1960,
+            "wood": 1960
+          },
+          "seconds": 5992,
+          "effects": {
+            "Training speed bonus": "6%"
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 3493,
+            "stone": 2794,
+            "wood": 2794
+          },
+          "seconds": 9031,
+          "effects": {
+            "Training speed bonus": "7%"
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 4877,
+            "stone": 3902,
+            "wood": 3902
+          },
+          "seconds": 13060,
+          "effects": {
+            "Training speed bonus": "8%"
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 6704,
+            "stone": 5363,
+            "wood": 5363
+          },
+          "seconds": 18303,
+          "effects": {
+            "Training speed bonus": "9%"
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 9100,
+            "stone": 7280,
+            "wood": 7280
+          },
+          "seconds": 25020,
+          "effects": {
+            "Training speed bonus": "10%"
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 12231,
+            "stone": 9785,
+            "wood": 9785
+          },
+          "seconds": 33521,
+          "effects": {
+            "Training speed bonus": "11%"
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 16302,
+            "stone": 13041,
+            "wood": 13041
+          },
+          "seconds": 44172,
+          "effects": {
+            "Training speed bonus": "12%"
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 21577,
+            "stone": 17262,
+            "wood": 17262
+          },
+          "seconds": 57402,
+          "effects": {
+            "Training speed bonus": "13%"
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 28391,
+            "stone": 22712,
+            "wood": 22712
+          },
+          "seconds": 73714,
+          "effects": {
+            "Training speed bonus": "14%"
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 37165,
+            "stone": 29732,
+            "wood": 29732
+          },
+          "seconds": 93698,
+          "effects": {
+            "Training speed bonus": "15%"
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 48435,
+            "stone": 38748,
+            "wood": 38748
+          },
+          "seconds": 118044,
+          "effects": {
+            "Training speed bonus": "16%"
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 62876,
+            "stone": 50301,
+            "wood": 50301
+          },
+          "seconds": 147555,
+          "effects": {
+            "Training speed bonus": "17%"
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 81340,
+            "stone": 65072,
+            "wood": 65072
+          },
+          "seconds": 183170,
+          "effects": {
+            "Training speed bonus": "18%"
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 104902,
+            "stone": 83921,
+            "wood": 83921
+          },
+          "seconds": 225980,
+          "effects": {
+            "Training speed bonus": "19%"
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 134914,
+            "stone": 107931,
+            "wood": 107931
+          },
+          "seconds": 277254,
+          "effects": {
+            "Training speed bonus": "20%"
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 173078,
+            "stone": 138462,
+            "wood": 138462
+          },
+          "seconds": 338461,
+          "effects": {
+            "Training speed bonus": "21%"
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 221535,
+            "stone": 177228,
+            "wood": 177228
+          },
+          "seconds": 411310,
+          "effects": {
+            "Training speed bonus": "22%"
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 282972,
+            "stone": 226378,
+            "wood": 226378
+          },
+          "seconds": 497775,
+          "effects": {
+            "Training speed bonus": "23%"
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 360764,
+            "stone": 288611,
+            "wood": 288611
+          },
+          "seconds": 600142,
+          "effects": {
+            "Training speed bonus": "24%"
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 459144,
+            "stone": 367315,
+            "wood": 367315
+          },
+          "seconds": 721049,
+          "effects": {
+            "Training speed bonus": "25%"
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 583417,
+            "stone": 466733,
+            "wood": 466733
+          },
+          "seconds": 863545,
+          "effects": {
+            "Training speed bonus": "26%"
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 740228,
+            "stone": 592183,
+            "wood": 592183
+          },
+          "seconds": 1031144,
+          "effects": {
+            "Training speed bonus": "27%"
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 937900,
+            "stone": 750320,
+            "wood": 750320
+          },
+          "seconds": 1227896,
+          "effects": {
+            "Training speed bonus": "28%"
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 1186843,
+            "stone": 949474,
+            "wood": 949474
+          },
+          "seconds": 1458461,
+          "effects": {
+            "Training speed bonus": "29%"
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 1500075,
+            "stone": 1200060,
+            "wood": 1200060
+          },
+          "seconds": 1728204,
+          "effects": {
+            "Training speed bonus": "30%"
+          }
+        }
+      ]
+    },
+    {
+      "type": "guardhouse",
+      "name": "Guardhouse",
+      "description": "Marks your kingdom’s military readiness. Must stay one level behind the Stronghold for it to keep upgrading, and gates Barracks.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 2
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 80,
+            "stone": 100,
+            "wood": 60
+          },
+          "seconds": 60,
+          "effects": {}
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 218,
+            "stone": 273,
+            "wood": 164
+          },
+          "seconds": 286,
+          "effects": {}
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 447,
+            "stone": 559,
+            "wood": 335
+          },
+          "seconds": 767,
+          "effects": {}
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 814,
+            "stone": 1018,
+            "wood": 611
+          },
+          "seconds": 1624,
+          "effects": {}
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1389,
+            "stone": 1737,
+            "wood": 1042
+          },
+          "seconds": 3024,
+          "effects": {}
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 2276,
+            "stone": 2845,
+            "wood": 1707
+          },
+          "seconds": 5188,
+          "effects": {}
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 3626,
+            "stone": 4532,
+            "wood": 2719
+          },
+          "seconds": 8415,
+          "effects": {}
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 5657,
+            "stone": 7071,
+            "wood": 4243
+          },
+          "seconds": 13096,
+          "effects": {}
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 8688,
+            "stone": 10860,
+            "wood": 6516
+          },
+          "seconds": 19750,
+          "effects": {}
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 13179,
+            "stone": 16474,
+            "wood": 9884
+          },
+          "seconds": 29053,
+          "effects": {}
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 19791,
+            "stone": 24739,
+            "wood": 14844
+          },
+          "seconds": 41889,
+          "effects": {}
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 29476,
+            "stone": 36845,
+            "wood": 22107
+          },
+          "seconds": 59400,
+          "effects": {}
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 43594,
+            "stone": 54493,
+            "wood": 32696
+          },
+          "seconds": 83067,
+          "effects": {}
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 64093,
+            "stone": 80116,
+            "wood": 48070
+          },
+          "seconds": 114793,
+          "effects": {}
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 93751,
+            "stone": 117188,
+            "wood": 70313
+          },
+          "seconds": 157021,
+          "effects": {}
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 136522,
+            "stone": 170652,
+            "wood": 102391
+          },
+          "seconds": 212878,
+          "effects": {}
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 198030,
+            "stone": 247537,
+            "wood": 148522
+          },
+          "seconds": 286354,
+          "effects": {}
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 286255,
+            "stone": 357819,
+            "wood": 214691
+          },
+          "seconds": 382531,
+          "effects": {}
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 412509,
+            "stone": 515637,
+            "wood": 309382
+          },
+          "seconds": 507861,
+          "effects": {}
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 592802,
+            "stone": 741003,
+            "wood": 444602
+          },
+          "seconds": 670523,
+          "effects": {}
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 849764,
+            "stone": 1062205,
+            "wood": 637323
+          },
+          "seconds": 880863,
+          "effects": {}
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 1215350,
+            "stone": 1519187,
+            "wood": 911512
+          },
+          "seconds": 1151943,
+          "effects": {}
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 1734626,
+            "stone": 2168283,
+            "wood": 1300970
+          },
+          "seconds": 1500227,
+          "effects": {}
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 2471091,
+            "stone": 3088864,
+            "wood": 1853319
+          },
+          "seconds": 1946435,
+          "effects": {}
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 3514124,
+            "stone": 4392655,
+            "wood": 2635593
+          },
+          "seconds": 2516595,
+          "effects": {}
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 4989418,
+            "stone": 6236772,
+            "wood": 3742063
+          },
+          "seconds": 3243365,
+          "effects": {}
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 7073588,
+            "stone": 8841984,
+            "wood": 5305191
+          },
+          "seconds": 4167663,
+          "effects": {}
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 10014597,
+            "stone": 12518246,
+            "wood": 7510947
+          },
+          "seconds": 5340686,
+          "effects": {}
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 14160314,
+            "stone": 17700393,
+            "wood": 10620236
+          },
+          "seconds": 6826418,
+          "effects": {}
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 19998416,
+            "stone": 24998020,
+            "wood": 14998812
+          },
+          "seconds": 8704730,
+          "effects": {}
+        }
+      ]
+    },
+    {
+      "type": "academy",
+      "name": "Academy",
+      "description": "Unlocks the Research tree. Required to study all technology branches.",
+      "category": "core",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 3
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 200,
+            "stone": 150,
+            "wood": 100
+          },
+          "seconds": 120,
+          "effects": {}
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 489,
+            "stone": 367,
+            "wood": 244
+          },
+          "seconds": 534,
+          "effects": {}
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 896,
+            "stone": 672,
+            "wood": 448
+          },
+          "seconds": 1338,
+          "effects": {}
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 1459,
+            "stone": 1094,
+            "wood": 730
+          },
+          "seconds": 2648,
+          "effects": {}
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 2228,
+            "stone": 1671,
+            "wood": 1114
+          },
+          "seconds": 4606,
+          "effects": {}
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 3267,
+            "stone": 2450,
+            "wood": 1634
+          },
+          "seconds": 7384,
+          "effects": {}
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 4657,
+            "stone": 3493,
+            "wood": 2329
+          },
+          "seconds": 11188,
+          "effects": {}
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 6503,
+            "stone": 4877,
+            "wood": 3251
+          },
+          "seconds": 16266,
+          "effects": {}
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 8938,
+            "stone": 6704,
+            "wood": 4469
+          },
+          "seconds": 22917,
+          "effects": {}
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 12134,
+            "stone": 9100,
+            "wood": 6067
+          },
+          "seconds": 31494,
+          "effects": {}
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 16308,
+            "stone": 12231,
+            "wood": 8154
+          },
+          "seconds": 42421,
+          "effects": {}
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 21736,
+            "stone": 16302,
+            "wood": 10868
+          },
+          "seconds": 56198,
+          "effects": {}
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 28769,
+            "stone": 21577,
+            "wood": 14385
+          },
+          "seconds": 73419,
+          "effects": {}
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 37854,
+            "stone": 28391,
+            "wood": 18927
+          },
+          "seconds": 94784,
+          "effects": {}
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 49553,
+            "stone": 37165,
+            "wood": 24777
+          },
+          "seconds": 121122,
+          "effects": {}
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 64580,
+            "stone": 48435,
+            "wood": 32290
+          },
+          "seconds": 153406,
+          "effects": {}
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 83835,
+            "stone": 62876,
+            "wood": 41917
+          },
+          "seconds": 192780,
+          "effects": {}
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 108454,
+            "stone": 81340,
+            "wood": 54227
+          },
+          "seconds": 240587,
+          "effects": {}
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 139869,
+            "stone": 104902,
+            "wood": 69935
+          },
+          "seconds": 298398,
+          "effects": {}
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 179885,
+            "stone": 134914,
+            "wood": 89942
+          },
+          "seconds": 368052,
+          "effects": {}
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 230771,
+            "stone": 173078,
+            "wood": 115385
+          },
+          "seconds": 451700,
+          "effects": {}
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 295380,
+            "stone": 221535,
+            "wood": 147690
+          },
+          "seconds": 551846,
+          "effects": {}
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 377296,
+            "stone": 282972,
+            "wood": 188648
+          },
+          "seconds": 671413,
+          "effects": {}
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 481019,
+            "stone": 360764,
+            "wood": 240510
+          },
+          "seconds": 813801,
+          "effects": {}
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 612192,
+            "stone": 459144,
+            "wood": 306096
+          },
+          "seconds": 982963,
+          "effects": {}
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 777889,
+            "stone": 583417,
+            "wood": 388944
+          },
+          "seconds": 1183492,
+          "effects": {}
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 986971,
+            "stone": 740228,
+            "wood": 493486
+          },
+          "seconds": 1420717,
+          "effects": {}
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 1250533,
+            "stone": 937900,
+            "wood": 625267
+          },
+          "seconds": 1700817,
+          "effects": {}
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 1582457,
+            "stone": 1186843,
+            "wood": 791228
+          },
+          "seconds": 2030949,
+          "effects": {}
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 2000100,
+            "stone": 1500075,
+            "wood": 1000050
+          },
+          "seconds": 2419397,
+          "effects": {}
+        }
+      ]
+    },
+    {
+      "type": "drill_grounds",
+      "name": "Drill Grounds",
+      "description": "Train your armies to march and raid. Each level raises your march capacity by 200 troops.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 3
+        },
+        {
+          "type": "academy",
+          "minLevel": 1
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 130,
+            "food": 60,
+            "stone": 100,
+            "wood": 80
+          },
+          "seconds": 90,
+          "effects": {
+            "March capacity": 200
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 318,
+            "food": 147,
+            "stone": 244,
+            "wood": 195
+          },
+          "seconds": 401,
+          "effects": {
+            "March capacity": 400
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 582,
+            "food": 269,
+            "stone": 448,
+            "wood": 358
+          },
+          "seconds": 1004,
+          "effects": {
+            "March capacity": 600
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 948,
+            "food": 438,
+            "stone": 730,
+            "wood": 584
+          },
+          "seconds": 1986,
+          "effects": {
+            "March capacity": 800
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1448,
+            "food": 669,
+            "stone": 1114,
+            "wood": 891
+          },
+          "seconds": 3455,
+          "effects": {
+            "March capacity": 1000
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 2124,
+            "food": 980,
+            "stone": 1634,
+            "wood": 1307
+          },
+          "seconds": 5538,
+          "effects": {
+            "March capacity": 1200
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 3027,
+            "food": 1397,
+            "stone": 2329,
+            "wood": 1863
+          },
+          "seconds": 8391,
+          "effects": {
+            "March capacity": 1400
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 4227,
+            "food": 1951,
+            "stone": 3251,
+            "wood": 2601
+          },
+          "seconds": 12200,
+          "effects": {
+            "March capacity": 1600
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 5810,
+            "food": 2681,
+            "stone": 4469,
+            "wood": 3575
+          },
+          "seconds": 17188,
+          "effects": {
+            "March capacity": 1800
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 7887,
+            "food": 3640,
+            "stone": 6067,
+            "wood": 4854
+          },
+          "seconds": 23621,
+          "effects": {
+            "March capacity": 2000
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 10600,
+            "food": 4892,
+            "stone": 8154,
+            "wood": 6523
+          },
+          "seconds": 31816,
+          "effects": {
+            "March capacity": 2200
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 14128,
+            "food": 6521,
+            "stone": 10868,
+            "wood": 8694
+          },
+          "seconds": 42148,
+          "effects": {
+            "March capacity": 2400
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 18700,
+            "food": 8631,
+            "stone": 14385,
+            "wood": 11508
+          },
+          "seconds": 55064,
+          "effects": {
+            "March capacity": 2600
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 24605,
+            "food": 11356,
+            "stone": 18927,
+            "wood": 15142
+          },
+          "seconds": 71088,
+          "effects": {
+            "March capacity": 2800
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 32210,
+            "food": 14866,
+            "stone": 24777,
+            "wood": 19821
+          },
+          "seconds": 90842,
+          "effects": {
+            "March capacity": 3000
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 41977,
+            "food": 19374,
+            "stone": 32290,
+            "wood": 25832
+          },
+          "seconds": 115055,
+          "effects": {
+            "March capacity": 3200
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 54493,
+            "food": 25150,
+            "stone": 41917,
+            "wood": 33534
+          },
+          "seconds": 144585,
+          "effects": {
+            "March capacity": 3400
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 70495,
+            "food": 32536,
+            "stone": 54227,
+            "wood": 43381
+          },
+          "seconds": 180440,
+          "effects": {
+            "March capacity": 3600
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 90915,
+            "food": 41961,
+            "stone": 69935,
+            "wood": 55948
+          },
+          "seconds": 223798,
+          "effects": {
+            "March capacity": 3800
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 116925,
+            "food": 53965,
+            "stone": 89942,
+            "wood": 71954
+          },
+          "seconds": 276039,
+          "effects": {
+            "March capacity": 4000
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 150001,
+            "food": 69231,
+            "stone": 115385,
+            "wood": 92308
+          },
+          "seconds": 338775,
+          "effects": {
+            "March capacity": 4200
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 191997,
+            "food": 88614,
+            "stone": 147690,
+            "wood": 118152
+          },
+          "seconds": 413885,
+          "effects": {
+            "March capacity": 4400
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 245242,
+            "food": 113189,
+            "stone": 188648,
+            "wood": 150918
+          },
+          "seconds": 503560,
+          "effects": {
+            "March capacity": 4600
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 312662,
+            "food": 144306,
+            "stone": 240510,
+            "wood": 192408
+          },
+          "seconds": 610351,
+          "effects": {
+            "March capacity": 4800
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 397925,
+            "food": 183658,
+            "stone": 306096,
+            "wood": 244877
+          },
+          "seconds": 737222,
+          "effects": {
+            "March capacity": 5000
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 505628,
+            "food": 233367,
+            "stone": 388944,
+            "wood": 311156
+          },
+          "seconds": 887619,
+          "effects": {
+            "March capacity": 5200
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 641531,
+            "food": 296091,
+            "stone": 493486,
+            "wood": 394788
+          },
+          "seconds": 1065538,
+          "effects": {
+            "March capacity": 5400
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 812847,
+            "food": 375160,
+            "stone": 625267,
+            "wood": 500213
+          },
+          "seconds": 1275613,
+          "effects": {
+            "March capacity": 5600
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 1028597,
+            "food": 474737,
+            "stone": 791228,
+            "wood": 632983
+          },
+          "seconds": 1523212,
+          "effects": {
+            "March capacity": 5800
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 1300065,
+            "food": 600030,
+            "stone": 1000050,
+            "wood": 800040
+          },
+          "seconds": 1814547,
+          "effects": {
+            "March capacity": 6000
+          }
+        }
+      ]
+    },
+    {
+      "type": "warehouse",
+      "name": "Warehouse",
+      "description": "Protects your resources from raiders. Resources stored below the protection threshold cannot be looted.",
+      "category": "economic",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 2
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 150,
+            "stone": 100,
+            "wood": 100
+          },
+          "seconds": 60,
+          "effects": {
+            "Protected per resource": 5000
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 367,
+            "stone": 244,
+            "wood": 244
+          },
+          "seconds": 267,
+          "effects": {
+            "Protected per resource": 12218
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 672,
+            "stone": 448,
+            "wood": 448
+          },
+          "seconds": 669,
+          "effects": {
+            "Protected per resource": 22392
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 1094,
+            "stone": 730,
+            "wood": 730
+          },
+          "seconds": 1324,
+          "effects": {
+            "Protected per resource": 36477
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1671,
+            "stone": 1114,
+            "wood": 1114
+          },
+          "seconds": 2303,
+          "effects": {
+            "Protected per resource": 55709
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 2450,
+            "stone": 1634,
+            "wood": 1634
+          },
+          "seconds": 3692,
+          "effects": {
+            "Protected per resource": 81678
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 3493,
+            "stone": 2329,
+            "wood": 2329
+          },
+          "seconds": 5594,
+          "effects": {
+            "Protected per resource": 116425
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 4877,
+            "stone": 3251,
+            "wood": 3251
+          },
+          "seconds": 8133,
+          "effects": {
+            "Protected per resource": 162568
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 6704,
+            "stone": 4469,
+            "wood": 4469
+          },
+          "seconds": 11459,
+          "effects": {
+            "Protected per resource": 223452
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 9100,
+            "stone": 6067,
+            "wood": 6067
+          },
+          "seconds": 15747,
+          "effects": {
+            "Protected per resource": 303347
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 12231,
+            "stone": 8154,
+            "wood": 8154
+          },
+          "seconds": 21211,
+          "effects": {
+            "Protected per resource": 407688
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 16302,
+            "stone": 10868,
+            "wood": 10868
+          },
+          "seconds": 28099,
+          "effects": {
+            "Protected per resource": 543392
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 21577,
+            "stone": 14385,
+            "wood": 14385
+          },
+          "seconds": 36709,
+          "effects": {
+            "Protected per resource": 719237
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 28391,
+            "stone": 18927,
+            "wood": 18927
+          },
+          "seconds": 47392,
+          "effects": {
+            "Protected per resource": 946354
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 37165,
+            "stone": 24777,
+            "wood": 24777
+          },
+          "seconds": 60561,
+          "effects": {
+            "Protected per resource": 1238834
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 48435,
+            "stone": 32290,
+            "wood": 32290
+          },
+          "seconds": 76703,
+          "effects": {
+            "Protected per resource": 1614502
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 62876,
+            "stone": 41917,
+            "wood": 41917
+          },
+          "seconds": 96390,
+          "effects": {
+            "Protected per resource": 2095868
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 81340,
+            "stone": 54227,
+            "wood": 54227
+          },
+          "seconds": 120293,
+          "effects": {
+            "Protected per resource": 2711341
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 104902,
+            "stone": 69935,
+            "wood": 69935
+          },
+          "seconds": 149199,
+          "effects": {
+            "Protected per resource": 3496728
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 134914,
+            "stone": 89942,
+            "wood": 89942
+          },
+          "seconds": 184026,
+          "effects": {
+            "Protected per resource": 4497123
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 173078,
+            "stone": 115385,
+            "wood": 115385
+          },
+          "seconds": 225850,
+          "effects": {
+            "Protected per resource": 5769267
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 221535,
+            "stone": 147690,
+            "wood": 147690
+          },
+          "seconds": 275923,
+          "effects": {
+            "Protected per resource": 7384491
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 282972,
+            "stone": 188648,
+            "wood": 188648
+          },
+          "seconds": 335707,
+          "effects": {
+            "Protected per resource": 9432402
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 360764,
+            "stone": 240510,
+            "wood": 240510
+          },
+          "seconds": 406900,
+          "effects": {
+            "Protected per resource": 12025476
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 459144,
+            "stone": 306096,
+            "wood": 306096
+          },
+          "seconds": 491481,
+          "effects": {
+            "Protected per resource": 15304798
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 583417,
+            "stone": 388944,
+            "wood": 388944
+          },
+          "seconds": 591746,
+          "effects": {
+            "Protected per resource": 19447219
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 740228,
+            "stone": 493486,
+            "wood": 493486
+          },
+          "seconds": 710359,
+          "effects": {
+            "Protected per resource": 24674280
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 937900,
+            "stone": 625267,
+            "wood": 625267
+          },
+          "seconds": 850409,
+          "effects": {
+            "Protected per resource": 31263336
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 1186843,
+            "stone": 791228,
+            "wood": 791228
+          },
+          "seconds": 1015475,
+          "effects": {
+            "Protected per resource": 39561419
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 1500075,
+            "stone": 1000050,
+            "wood": 1000050
+          },
+          "seconds": 1209698,
+          "effects": {
+            "Protected per resource": 50002496
+          }
+        }
+      ]
+    },
+    {
+      "type": "war_hall",
+      "name": "War Hall",
+      "description": "Musters your guild's rallies. Each level raises the total troops a Rally you start can carry by 200.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 3
+        },
+        {
+          "type": "academy",
+          "minLevel": 1
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 130,
+            "food": 60,
+            "stone": 100,
+            "wood": 80
+          },
+          "seconds": 90,
+          "effects": {
+            "Rally capacity": 200
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 318,
+            "food": 147,
+            "stone": 244,
+            "wood": 195
+          },
+          "seconds": 401,
+          "effects": {
+            "Rally capacity": 400
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 582,
+            "food": 269,
+            "stone": 448,
+            "wood": 358
+          },
+          "seconds": 1004,
+          "effects": {
+            "Rally capacity": 600
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 948,
+            "food": 438,
+            "stone": 730,
+            "wood": 584
+          },
+          "seconds": 1986,
+          "effects": {
+            "Rally capacity": 800
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1448,
+            "food": 669,
+            "stone": 1114,
+            "wood": 891
+          },
+          "seconds": 3455,
+          "effects": {
+            "Rally capacity": 1000
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 2124,
+            "food": 980,
+            "stone": 1634,
+            "wood": 1307
+          },
+          "seconds": 5538,
+          "effects": {
+            "Rally capacity": 1200
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 3027,
+            "food": 1397,
+            "stone": 2329,
+            "wood": 1863
+          },
+          "seconds": 8391,
+          "effects": {
+            "Rally capacity": 1400
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 4227,
+            "food": 1951,
+            "stone": 3251,
+            "wood": 2601
+          },
+          "seconds": 12200,
+          "effects": {
+            "Rally capacity": 1600
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 5810,
+            "food": 2681,
+            "stone": 4469,
+            "wood": 3575
+          },
+          "seconds": 17188,
+          "effects": {
+            "Rally capacity": 1800
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 7887,
+            "food": 3640,
+            "stone": 6067,
+            "wood": 4854
+          },
+          "seconds": 23621,
+          "effects": {
+            "Rally capacity": 2000
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 10600,
+            "food": 4892,
+            "stone": 8154,
+            "wood": 6523
+          },
+          "seconds": 31816,
+          "effects": {
+            "Rally capacity": 2200
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 14128,
+            "food": 6521,
+            "stone": 10868,
+            "wood": 8694
+          },
+          "seconds": 42148,
+          "effects": {
+            "Rally capacity": 2400
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 18700,
+            "food": 8631,
+            "stone": 14385,
+            "wood": 11508
+          },
+          "seconds": 55064,
+          "effects": {
+            "Rally capacity": 2600
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 24605,
+            "food": 11356,
+            "stone": 18927,
+            "wood": 15142
+          },
+          "seconds": 71088,
+          "effects": {
+            "Rally capacity": 2800
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 32210,
+            "food": 14866,
+            "stone": 24777,
+            "wood": 19821
+          },
+          "seconds": 90842,
+          "effects": {
+            "Rally capacity": 3000
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 41977,
+            "food": 19374,
+            "stone": 32290,
+            "wood": 25832
+          },
+          "seconds": 115055,
+          "effects": {
+            "Rally capacity": 3200
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 54493,
+            "food": 25150,
+            "stone": 41917,
+            "wood": 33534
+          },
+          "seconds": 144585,
+          "effects": {
+            "Rally capacity": 3400
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 70495,
+            "food": 32536,
+            "stone": 54227,
+            "wood": 43381
+          },
+          "seconds": 180440,
+          "effects": {
+            "Rally capacity": 3600
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 90915,
+            "food": 41961,
+            "stone": 69935,
+            "wood": 55948
+          },
+          "seconds": 223798,
+          "effects": {
+            "Rally capacity": 3800
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 116925,
+            "food": 53965,
+            "stone": 89942,
+            "wood": 71954
+          },
+          "seconds": 276039,
+          "effects": {
+            "Rally capacity": 4000
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 150001,
+            "food": 69231,
+            "stone": 115385,
+            "wood": 92308
+          },
+          "seconds": 338775,
+          "effects": {
+            "Rally capacity": 4200
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 191997,
+            "food": 88614,
+            "stone": 147690,
+            "wood": 118152
+          },
+          "seconds": 413885,
+          "effects": {
+            "Rally capacity": 4400
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 245242,
+            "food": 113189,
+            "stone": 188648,
+            "wood": 150918
+          },
+          "seconds": 503560,
+          "effects": {
+            "Rally capacity": 4600
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 312662,
+            "food": 144306,
+            "stone": 240510,
+            "wood": 192408
+          },
+          "seconds": 610351,
+          "effects": {
+            "Rally capacity": 4800
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 397925,
+            "food": 183658,
+            "stone": 306096,
+            "wood": 244877
+          },
+          "seconds": 737222,
+          "effects": {
+            "Rally capacity": 5000
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 505628,
+            "food": 233367,
+            "stone": 388944,
+            "wood": 311156
+          },
+          "seconds": 887619,
+          "effects": {
+            "Rally capacity": 5200
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 641531,
+            "food": 296091,
+            "stone": 493486,
+            "wood": 394788
+          },
+          "seconds": 1065538,
+          "effects": {
+            "Rally capacity": 5400
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 812847,
+            "food": 375160,
+            "stone": 625267,
+            "wood": 500213
+          },
+          "seconds": 1275613,
+          "effects": {
+            "Rally capacity": 5600
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 1028597,
+            "food": 474737,
+            "stone": 791228,
+            "wood": 632983
+          },
+          "seconds": 1523212,
+          "effects": {
+            "Rally capacity": 5800
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 1300065,
+            "food": 600030,
+            "stone": 1000050,
+            "wood": 800040
+          },
+          "seconds": 1814547,
+          "effects": {
+            "Rally capacity": 6000
+          }
+        }
+      ]
+    },
+    {
+      "type": "embassy",
+      "name": "Embassy",
+      "description": "Hosts allied reinforcements. Each level raises the total troops your castle can hold as reinforcements by 200.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 3
+        },
+        {
+          "type": "academy",
+          "minLevel": 1
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 130,
+            "food": 60,
+            "stone": 100,
+            "wood": 80
+          },
+          "seconds": 90,
+          "effects": {
+            "Reinforcement capacity": 200
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 318,
+            "food": 147,
+            "stone": 244,
+            "wood": 195
+          },
+          "seconds": 401,
+          "effects": {
+            "Reinforcement capacity": 400
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 582,
+            "food": 269,
+            "stone": 448,
+            "wood": 358
+          },
+          "seconds": 1004,
+          "effects": {
+            "Reinforcement capacity": 600
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 948,
+            "food": 438,
+            "stone": 730,
+            "wood": 584
+          },
+          "seconds": 1986,
+          "effects": {
+            "Reinforcement capacity": 800
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1448,
+            "food": 669,
+            "stone": 1114,
+            "wood": 891
+          },
+          "seconds": 3455,
+          "effects": {
+            "Reinforcement capacity": 1000
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 2124,
+            "food": 980,
+            "stone": 1634,
+            "wood": 1307
+          },
+          "seconds": 5538,
+          "effects": {
+            "Reinforcement capacity": 1200
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 3027,
+            "food": 1397,
+            "stone": 2329,
+            "wood": 1863
+          },
+          "seconds": 8391,
+          "effects": {
+            "Reinforcement capacity": 1400
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 4227,
+            "food": 1951,
+            "stone": 3251,
+            "wood": 2601
+          },
+          "seconds": 12200,
+          "effects": {
+            "Reinforcement capacity": 1600
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 5810,
+            "food": 2681,
+            "stone": 4469,
+            "wood": 3575
+          },
+          "seconds": 17188,
+          "effects": {
+            "Reinforcement capacity": 1800
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 7887,
+            "food": 3640,
+            "stone": 6067,
+            "wood": 4854
+          },
+          "seconds": 23621,
+          "effects": {
+            "Reinforcement capacity": 2000
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 10600,
+            "food": 4892,
+            "stone": 8154,
+            "wood": 6523
+          },
+          "seconds": 31816,
+          "effects": {
+            "Reinforcement capacity": 2200
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 14128,
+            "food": 6521,
+            "stone": 10868,
+            "wood": 8694
+          },
+          "seconds": 42148,
+          "effects": {
+            "Reinforcement capacity": 2400
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 18700,
+            "food": 8631,
+            "stone": 14385,
+            "wood": 11508
+          },
+          "seconds": 55064,
+          "effects": {
+            "Reinforcement capacity": 2600
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 24605,
+            "food": 11356,
+            "stone": 18927,
+            "wood": 15142
+          },
+          "seconds": 71088,
+          "effects": {
+            "Reinforcement capacity": 2800
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 32210,
+            "food": 14866,
+            "stone": 24777,
+            "wood": 19821
+          },
+          "seconds": 90842,
+          "effects": {
+            "Reinforcement capacity": 3000
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 41977,
+            "food": 19374,
+            "stone": 32290,
+            "wood": 25832
+          },
+          "seconds": 115055,
+          "effects": {
+            "Reinforcement capacity": 3200
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 54493,
+            "food": 25150,
+            "stone": 41917,
+            "wood": 33534
+          },
+          "seconds": 144585,
+          "effects": {
+            "Reinforcement capacity": 3400
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 70495,
+            "food": 32536,
+            "stone": 54227,
+            "wood": 43381
+          },
+          "seconds": 180440,
+          "effects": {
+            "Reinforcement capacity": 3600
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 90915,
+            "food": 41961,
+            "stone": 69935,
+            "wood": 55948
+          },
+          "seconds": 223798,
+          "effects": {
+            "Reinforcement capacity": 3800
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 116925,
+            "food": 53965,
+            "stone": 89942,
+            "wood": 71954
+          },
+          "seconds": 276039,
+          "effects": {
+            "Reinforcement capacity": 4000
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 150001,
+            "food": 69231,
+            "stone": 115385,
+            "wood": 92308
+          },
+          "seconds": 338775,
+          "effects": {
+            "Reinforcement capacity": 4200
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 191997,
+            "food": 88614,
+            "stone": 147690,
+            "wood": 118152
+          },
+          "seconds": 413885,
+          "effects": {
+            "Reinforcement capacity": 4400
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 245242,
+            "food": 113189,
+            "stone": 188648,
+            "wood": 150918
+          },
+          "seconds": 503560,
+          "effects": {
+            "Reinforcement capacity": 4600
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 312662,
+            "food": 144306,
+            "stone": 240510,
+            "wood": 192408
+          },
+          "seconds": 610351,
+          "effects": {
+            "Reinforcement capacity": 4800
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 397925,
+            "food": 183658,
+            "stone": 306096,
+            "wood": 244877
+          },
+          "seconds": 737222,
+          "effects": {
+            "Reinforcement capacity": 5000
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 505628,
+            "food": 233367,
+            "stone": 388944,
+            "wood": 311156
+          },
+          "seconds": 887619,
+          "effects": {
+            "Reinforcement capacity": 5200
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 641531,
+            "food": 296091,
+            "stone": 493486,
+            "wood": 394788
+          },
+          "seconds": 1065538,
+          "effects": {
+            "Reinforcement capacity": 5400
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 812847,
+            "food": 375160,
+            "stone": 625267,
+            "wood": 500213
+          },
+          "seconds": 1275613,
+          "effects": {
+            "Reinforcement capacity": 5600
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 1028597,
+            "food": 474737,
+            "stone": 791228,
+            "wood": 632983
+          },
+          "seconds": 1523212,
+          "effects": {
+            "Reinforcement capacity": 5800
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 1300065,
+            "food": 600030,
+            "stone": 1000050,
+            "wood": 800040
+          },
+          "seconds": 1814547,
+          "effects": {
+            "Reinforcement capacity": 6000
+          }
+        }
+      ]
+    },
+    {
+      "type": "lighthouse",
+      "name": "Lighthouse",
+      "description": "Required to send scouts. Each level sharpens what a scout report reveals — which troop tiers you can identify, how exact the troop counts are, and (at high levels) the reinforcements stationed in the castle.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 2
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 100,
+            "stone": 100,
+            "wood": 60
+          },
+          "seconds": 75,
+          "effects": {}
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 244,
+            "stone": 244,
+            "wood": 147
+          },
+          "seconds": 334,
+          "effects": {}
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 448,
+            "stone": 448,
+            "wood": 269
+          },
+          "seconds": 836,
+          "effects": {}
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 730,
+            "stone": 730,
+            "wood": 438
+          },
+          "seconds": 1655,
+          "effects": {}
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1114,
+            "stone": 1114,
+            "wood": 669
+          },
+          "seconds": 2879,
+          "effects": {}
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 1634,
+            "stone": 1634,
+            "wood": 980
+          },
+          "seconds": 4615,
+          "effects": {}
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 2329,
+            "stone": 2329,
+            "wood": 1397
+          },
+          "seconds": 6992,
+          "effects": {}
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 3251,
+            "stone": 3251,
+            "wood": 1951
+          },
+          "seconds": 10167,
+          "effects": {}
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 4469,
+            "stone": 4469,
+            "wood": 2681
+          },
+          "seconds": 14323,
+          "effects": {}
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 6067,
+            "stone": 6067,
+            "wood": 3640
+          },
+          "seconds": 19684,
+          "effects": {}
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 8154,
+            "stone": 8154,
+            "wood": 4892
+          },
+          "seconds": 26513,
+          "effects": {}
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 10868,
+            "stone": 10868,
+            "wood": 6521
+          },
+          "seconds": 35124,
+          "effects": {}
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 14385,
+            "stone": 14385,
+            "wood": 8631
+          },
+          "seconds": 45887,
+          "effects": {}
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 18927,
+            "stone": 18927,
+            "wood": 11356
+          },
+          "seconds": 59240,
+          "effects": {}
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 24777,
+            "stone": 24777,
+            "wood": 14866
+          },
+          "seconds": 75702,
+          "effects": {}
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 32290,
+            "stone": 32290,
+            "wood": 19374
+          },
+          "seconds": 95879,
+          "effects": {}
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 41917,
+            "stone": 41917,
+            "wood": 25150
+          },
+          "seconds": 120488,
+          "effects": {}
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 54227,
+            "stone": 54227,
+            "wood": 32536
+          },
+          "seconds": 150367,
+          "effects": {}
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 69935,
+            "stone": 69935,
+            "wood": 41961
+          },
+          "seconds": 186499,
+          "effects": {}
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 89942,
+            "stone": 89942,
+            "wood": 53965
+          },
+          "seconds": 230033,
+          "effects": {}
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 115385,
+            "stone": 115385,
+            "wood": 69231
+          },
+          "seconds": 282312,
+          "effects": {}
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 147690,
+            "stone": 147690,
+            "wood": 88614
+          },
+          "seconds": 344904,
+          "effects": {}
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 188648,
+            "stone": 188648,
+            "wood": 113189
+          },
+          "seconds": 419633,
+          "effects": {}
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 240510,
+            "stone": 240510,
+            "wood": 144306
+          },
+          "seconds": 508625,
+          "effects": {}
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 306096,
+            "stone": 306096,
+            "wood": 183658
+          },
+          "seconds": 614352,
+          "effects": {}
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 388944,
+            "stone": 388944,
+            "wood": 233367
+          },
+          "seconds": 739682,
+          "effects": {}
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 493486,
+            "stone": 493486,
+            "wood": 296091
+          },
+          "seconds": 887948,
+          "effects": {}
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 625267,
+            "stone": 625267,
+            "wood": 375160
+          },
+          "seconds": 1063011,
+          "effects": {}
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 791228,
+            "stone": 791228,
+            "wood": 474737
+          },
+          "seconds": 1269343,
+          "effects": {}
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 1000050,
+            "stone": 1000050,
+            "wood": 600030
+          },
+          "seconds": 1512123,
+          "effects": {}
+        }
+      ]
+    },
+    {
+      "type": "hospital",
+      "name": "Hospital",
+      "description": "Holds wounded troops and heals them. Each level raises how many wounded it can hold by 200 and makes healing 2% faster. Troops lost in battle are wounded first and only die if the Hospital is full.",
+      "category": "military",
+      "maxLevel": 30,
+      "maxCount": 1,
+      "prerequisites": [
+        {
+          "type": "stronghold",
+          "minLevel": 2
+        }
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cost": {
+            "gold": 110,
+            "food": 60,
+            "stone": 90,
+            "wood": 90
+          },
+          "seconds": 75,
+          "effects": {
+            "Wounded capacity": 200,
+            "Healing speed bonus": "2%"
+          }
+        },
+        {
+          "level": 2,
+          "cost": {
+            "gold": 269,
+            "food": 147,
+            "stone": 220,
+            "wood": 220
+          },
+          "seconds": 334,
+          "effects": {
+            "Wounded capacity": 400,
+            "Healing speed bonus": "4%"
+          }
+        },
+        {
+          "level": 3,
+          "cost": {
+            "gold": 493,
+            "food": 269,
+            "stone": 403,
+            "wood": 403
+          },
+          "seconds": 836,
+          "effects": {
+            "Wounded capacity": 600,
+            "Healing speed bonus": "6%"
+          }
+        },
+        {
+          "level": 4,
+          "cost": {
+            "gold": 802,
+            "food": 438,
+            "stone": 657,
+            "wood": 657
+          },
+          "seconds": 1655,
+          "effects": {
+            "Wounded capacity": 800,
+            "Healing speed bonus": "8%"
+          }
+        },
+        {
+          "level": 5,
+          "cost": {
+            "gold": 1226,
+            "food": 669,
+            "stone": 1003,
+            "wood": 1003
+          },
+          "seconds": 2879,
+          "effects": {
+            "Wounded capacity": 1000,
+            "Healing speed bonus": "10%"
+          }
+        },
+        {
+          "level": 6,
+          "cost": {
+            "gold": 1797,
+            "food": 980,
+            "stone": 1470,
+            "wood": 1470
+          },
+          "seconds": 4615,
+          "effects": {
+            "Wounded capacity": 1200,
+            "Healing speed bonus": "12%"
+          }
+        },
+        {
+          "level": 7,
+          "cost": {
+            "gold": 2561,
+            "food": 1397,
+            "stone": 2096,
+            "wood": 2096
+          },
+          "seconds": 6992,
+          "effects": {
+            "Wounded capacity": 1400,
+            "Healing speed bonus": "14%"
+          }
+        },
+        {
+          "level": 8,
+          "cost": {
+            "gold": 3577,
+            "food": 1951,
+            "stone": 2926,
+            "wood": 2926
+          },
+          "seconds": 10167,
+          "effects": {
+            "Wounded capacity": 1600,
+            "Healing speed bonus": "16%"
+          }
+        },
+        {
+          "level": 9,
+          "cost": {
+            "gold": 4916,
+            "food": 2681,
+            "stone": 4022,
+            "wood": 4022
+          },
+          "seconds": 14323,
+          "effects": {
+            "Wounded capacity": 1800,
+            "Healing speed bonus": "18%"
+          }
+        },
+        {
+          "level": 10,
+          "cost": {
+            "gold": 6674,
+            "food": 3640,
+            "stone": 5460,
+            "wood": 5460
+          },
+          "seconds": 19684,
+          "effects": {
+            "Wounded capacity": 2000,
+            "Healing speed bonus": "20%"
+          }
+        },
+        {
+          "level": 11,
+          "cost": {
+            "gold": 8969,
+            "food": 4892,
+            "stone": 7338,
+            "wood": 7338
+          },
+          "seconds": 26513,
+          "effects": {
+            "Wounded capacity": 2200,
+            "Healing speed bonus": "22%"
+          }
+        },
+        {
+          "level": 12,
+          "cost": {
+            "gold": 11955,
+            "food": 6521,
+            "stone": 9781,
+            "wood": 9781
+          },
+          "seconds": 35124,
+          "effects": {
+            "Wounded capacity": 2400,
+            "Healing speed bonus": "24%"
+          }
+        },
+        {
+          "level": 13,
+          "cost": {
+            "gold": 15823,
+            "food": 8631,
+            "stone": 12946,
+            "wood": 12946
+          },
+          "seconds": 45887,
+          "effects": {
+            "Wounded capacity": 2600,
+            "Healing speed bonus": "26%"
+          }
+        },
+        {
+          "level": 14,
+          "cost": {
+            "gold": 20820,
+            "food": 11356,
+            "stone": 17034,
+            "wood": 17034
+          },
+          "seconds": 59240,
+          "effects": {
+            "Wounded capacity": 2800,
+            "Healing speed bonus": "28%"
+          }
+        },
+        {
+          "level": 15,
+          "cost": {
+            "gold": 27254,
+            "food": 14866,
+            "stone": 22299,
+            "wood": 22299
+          },
+          "seconds": 75702,
+          "effects": {
+            "Wounded capacity": 3000,
+            "Healing speed bonus": "30%"
+          }
+        },
+        {
+          "level": 16,
+          "cost": {
+            "gold": 35519,
+            "food": 19374,
+            "stone": 29061,
+            "wood": 29061
+          },
+          "seconds": 95879,
+          "effects": {
+            "Wounded capacity": 3200,
+            "Healing speed bonus": "32%"
+          }
+        },
+        {
+          "level": 17,
+          "cost": {
+            "gold": 46109,
+            "food": 25150,
+            "stone": 37726,
+            "wood": 37726
+          },
+          "seconds": 120488,
+          "effects": {
+            "Wounded capacity": 3400,
+            "Healing speed bonus": "34%"
+          }
+        },
+        {
+          "level": 18,
+          "cost": {
+            "gold": 59650,
+            "food": 32536,
+            "stone": 48804,
+            "wood": 48804
+          },
+          "seconds": 150367,
+          "effects": {
+            "Wounded capacity": 3600,
+            "Healing speed bonus": "36%"
+          }
+        },
+        {
+          "level": 19,
+          "cost": {
+            "gold": 76928,
+            "food": 41961,
+            "stone": 62941,
+            "wood": 62941
+          },
+          "seconds": 186499,
+          "effects": {
+            "Wounded capacity": 3800,
+            "Healing speed bonus": "38%"
+          }
+        },
+        {
+          "level": 20,
+          "cost": {
+            "gold": 98937,
+            "food": 53965,
+            "stone": 80948,
+            "wood": 80948
+          },
+          "seconds": 230033,
+          "effects": {
+            "Wounded capacity": 4000,
+            "Healing speed bonus": "40%"
+          }
+        },
+        {
+          "level": 21,
+          "cost": {
+            "gold": 126924,
+            "food": 69231,
+            "stone": 103847,
+            "wood": 103847
+          },
+          "seconds": 282312,
+          "effects": {
+            "Wounded capacity": 4200,
+            "Healing speed bonus": "42%"
+          }
+        },
+        {
+          "level": 22,
+          "cost": {
+            "gold": 162459,
+            "food": 88614,
+            "stone": 132921,
+            "wood": 132921
+          },
+          "seconds": 344904,
+          "effects": {
+            "Wounded capacity": 4400,
+            "Healing speed bonus": "44%"
+          }
+        },
+        {
+          "level": 23,
+          "cost": {
+            "gold": 207513,
+            "food": 113189,
+            "stone": 169783,
+            "wood": 169783
+          },
+          "seconds": 419633,
+          "effects": {
+            "Wounded capacity": 4600,
+            "Healing speed bonus": "46%"
+          }
+        },
+        {
+          "level": 24,
+          "cost": {
+            "gold": 264560,
+            "food": 144306,
+            "stone": 216459,
+            "wood": 216459
+          },
+          "seconds": 508625,
+          "effects": {
+            "Wounded capacity": 4800,
+            "Healing speed bonus": "48%"
+          }
+        },
+        {
+          "level": 25,
+          "cost": {
+            "gold": 336706,
+            "food": 183658,
+            "stone": 275486,
+            "wood": 275486
+          },
+          "seconds": 614352,
+          "effects": {
+            "Wounded capacity": 5000,
+            "Healing speed bonus": "50%"
+          }
+        },
+        {
+          "level": 26,
+          "cost": {
+            "gold": 427839,
+            "food": 233367,
+            "stone": 350050,
+            "wood": 350050
+          },
+          "seconds": 739682,
+          "effects": {
+            "Wounded capacity": 5200,
+            "Healing speed bonus": "52%"
+          }
+        },
+        {
+          "level": 27,
+          "cost": {
+            "gold": 542834,
+            "food": 296091,
+            "stone": 444137,
+            "wood": 444137
+          },
+          "seconds": 887948,
+          "effects": {
+            "Wounded capacity": 5400,
+            "Healing speed bonus": "54%"
+          }
+        },
+        {
+          "level": 28,
+          "cost": {
+            "gold": 687793,
+            "food": 375160,
+            "stone": 562740,
+            "wood": 562740
+          },
+          "seconds": 1063011,
+          "effects": {
+            "Wounded capacity": 5600,
+            "Healing speed bonus": "56%"
+          }
+        },
+        {
+          "level": 29,
+          "cost": {
+            "gold": 870351,
+            "food": 474737,
+            "stone": 712106,
+            "wood": 712106
+          },
+          "seconds": 1269343,
+          "effects": {
+            "Wounded capacity": 5800,
+            "Healing speed bonus": "58%"
+          }
+        },
+        {
+          "level": 30,
+          "cost": {
+            "gold": 1100055,
+            "food": 600030,
+            "stone": 900045,
+            "wood": 900045
+          },
+          "seconds": 1512123,
+          "effects": {
+            "Wounded capacity": 6000,
+            "Healing speed bonus": "60%"
+          }
+        }
+      ]
+    }
+  ]
+}

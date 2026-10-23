@@ -14,6 +14,6 @@ The game is still in testing, so numbers and mechanics can change between versio
 ## Where to go next
 
 - [Resources](../../game-systems/resources/): what you collect and spend.
-- [Buildings](../../game-systems/buildings/): how your kingdom grows.
+- [Buildings](../../buildings/): how your kingdom grows.
 - [Map and marching](../../game-systems/map-and-marching/): moving around the world.
 - [Combat](../../combat/): how battles work, with worked examples.

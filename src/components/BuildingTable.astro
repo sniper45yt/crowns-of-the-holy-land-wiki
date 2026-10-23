@@ -1,0 +1,125 @@
+---
+import data from '../data/buildings.json';
+
+interface Props {
+  type: string;
+}
+
+const { type } = Astro.props;
+const building = data.buildings.find((b) => b.type === type);
+if (!building) throw new Error(`Unknown building type: ${type}`);
+
+const RESOURCES = [
+  { key: 'gold', label: 'Gold' },
+  { key: 'food', label: 'Food' },
+  { key: 'stone', label: 'Stone' },
+  { key: 'wood', label: 'Wood' },
+] as const;
+
+const fmt = (n: number) => n.toLocaleString('en-US');
+
+function duration(totalSeconds: number): string {
+  let s = Math.round(totalSeconds);
+  const d = Math.floor(s / 86400); s -= d * 86400;
+  const h = Math.floor(s / 3600); s -= h * 3600;
+  const m = Math.floor(s / 60); s -= m * 60;
+  const parts: string[] = [];
+  if (d) parts.push(`${d}d`);
+  if (h) parts.push(`${h}h`);
+  if (m && !d) parts.push(`${m}m`);
+  if (s && !d && !h) parts.push(`${s}s`);
+  return parts.join(' ') || '0s';
+}
+
+// Only show resource columns this building actually costs.
+const usedResources = RESOURCES.filter((r) => building.levels.some((l) => (l.cost as Record<string, number>)[r.key]));
+const effectKeys = Object.keys(building.levels[0].effects);
+
+const totals = building.levels.reduce(
+  (acc, l) => {
+    for (const r of RESOURCES) acc[r.key] += (l.cost as Record<string, number>)[r.key] ?? 0;
+    acc.seconds += l.seconds;
+    return acc;
+  },
+  { gold: 0, food: 0, stone: 0, wood: 0, seconds: 0 },
+);
+
+const nameOf = (t: string) => (data.names as Record<string, string>)[t] ?? t;
+const requirements = building.prerequisites.map((p: any) => {
+  const name = nameOf(p.type);
+  if (p.trailBehind != null) {
+    return `From level ${p.fromLevel} on, each upgrade needs ${name} at level (target level − ${p.trailBehind}) or higher.`;
+  }
+  if (p.fromLevel && p.fromLevel > 1) return `${name} level ${p.minLevel} before upgrading to level ${p.fromLevel}.`;
+  return `${name} level ${p.minLevel}.`;
+});
+---
+
+<p>{building.description}</p>
+
+<ul>
+  <li><strong>Maximum level:</strong> {building.maxLevel}</li>
+  <li><strong>How many you can build:</strong> {building.maxCount}</li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+{type !== 'stronghold' && <p>A building can never be upgraded past your Stronghold level.</p>}
+{requirements.length > 0 && (
+  <ul>
+    {requirements.map((r) => <li>{r}</li>)}
+  </ul>
+)}
+{requirements.length === 0 && type !== 'stronghold' && <p>No other requirements.</p>}
+
+<h2 id="costs-by-level">Cost and build time by level</h2>
+<div class="building-table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Level</th>
+        {usedResources.map((r) => <th>{r.label}</th>)}
+        <th>Build time</th>
+        {effectKeys.map((k) => <th>{k}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {building.levels.map((l) => (
+        <tr>
+          <td>{l.level}</td>
+          {usedResources.map((r) => <td>{fmt((l.cost as Record<string, number>)[r.key] ?? 0)}</td>)}
+          <td>{duration(l.seconds)}</td>
+          {effectKeys.map((k) => {
+            const v = (l.effects as Record<string, number | string>)[k];
+            return <td>{typeof v === 'number' ? fmt(v) : v}</td>;
+          })}
+        </tr>
+      ))}
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total, 1 to {building.maxLevel}</th>
+        {usedResources.map((r) => <th>{fmt(totals[r.key])}</th>)}
+        <th>{duration(totals.seconds)}</th>
+        {effectKeys.map(() => <th></th>)}
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<p><small>Build times are before any speed-ups or research bonuses.</small></p>
+
+<style>
+  .building-table-wrap {
+    overflow-x: auto;
+  }
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+  td,
+  th {
+    white-space: nowrap;
+  }
+  tfoot th {
+    border-top: 2px solid var(--sl-color-gray-5);
+  }
+</style>

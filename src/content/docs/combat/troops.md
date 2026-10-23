@@ -28,7 +28,7 @@ Roles by design: **infantry = meat shield** (lowest ATK, highest DEF and HP), **
 
 ## Unlocking tiers
 
-Higher troop tiers are unlocked by upgrading the matching training building: the [Barracks](../../game-systems/buildings/) for infantry, the Archery Range for archers, the Stable for cavalry and the Siege Workshop for siege. Every level of a training building also trains its own troop type 1% faster, up to 30% at level 30.
+Higher troop tiers are unlocked by upgrading the matching training building: the [Barracks](../../buildings/barracks/) for infantry, the Archery Range for archers, the Stable for cavalry and the Siege Workshop for siege. Every level of a training building also trains its own troop type 1% faster, up to 30% at level 30.
 
 :::note
 These stats are starting values and may change after more playtesting.
