@@ -1,0 +1,31 @@
+---
+title: Crowns of the Holy Land Wiki
+description: Player documentation for Crowns of the Holy Land - how the game works, explained.
+template: splash
+hero:
+  tagline: Everything you need to know about building your kingdom, commanding your armies and ruling the Holy Land.
+  actions:
+    - text: Getting started
+      link: /crowns-of-the-holy-land-wiki/getting-started/welcome/
+      icon: right-arrow
+    - text: Buildings
+      link: /crowns-of-the-holy-land-wiki/game-systems/buildings/
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+	<Card title="Getting started" icon="rocket">
+		New to the game? Start with the basics of your kingdom.
+	</Card>
+	<Card title="Resources" icon="star">
+		Gold, food, stone and wood: what they do and how to earn them.
+	</Card>
+	<Card title="Buildings" icon="puzzle">
+		Every building, what it does and how far you can upgrade it.
+	</Card>
+	<Card title="Map & marching" icon="pin">
+		Explore the world map and send your armies out.
+	</Card>
+</CardGrid>
