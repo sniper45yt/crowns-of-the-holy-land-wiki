@@ -46,21 +46,33 @@ const totals = building.levels.reduce(
 
 const nameOf = (t: string) => (data.names as Record<string, string>)[t] ?? t;
 
-// What must already be built before upgrading to `level`, mirroring the game's own check:
-// the Stronghold must be at least that level (except for the Stronghold itself), and every
-// prerequisite that applies from `fromLevel` needs its building at a minimum level. A
-// prerequisite with `trailBehind` needs the building at (target level - trailBehind).
-function requiresFor(level: number): string {
+// The prerequisite buildings needed to upgrade to `level`, mirroring the game's own check:
+// every prerequisite that applies from `fromLevel` needs its building at a minimum level, and
+// one with `trailBehind` needs the building at (target level - trailBehind). The plain rule that
+// a building cannot exceed the Stronghold's level is not listed here (it is stated above the
+// table), only Stronghold requirements that go beyond it.
+function prerequisitesAt(level: number): Map<string, number> {
   const needed = new Map<string, number>();
-  const need = (t: string, lvl: number) => {
-    if (lvl > 0 && lvl > (needed.get(t) ?? 0)) needed.set(t, lvl);
-  };
-  if (type !== 'stronghold') need('stronghold', level);
   for (const p of building!.prerequisites as any[]) {
     if ((p.fromLevel ?? 1) > level) continue;
-    need(p.type, p.trailBehind != null ? level - p.trailBehind : p.minLevel ?? 0);
+    const lvl = p.trailBehind != null ? level - p.trailBehind : p.minLevel ?? 0;
+    if (type === 'stronghold' || p.type !== 'stronghold' || lvl > level) {
+      if (lvl > (needed.get(p.type) ?? 0)) needed.set(p.type, lvl);
+    }
   }
-  return [...needed.entries()].map(([t, lvl]) => `${nameOf(t)} ${lvl}`).join(', ') || '-';
+  return needed;
+}
+
+// Only what is NEW at this level: a prerequisite that was not needed at the previous level, or
+// that now needs a higher level. Everything listed at lower levels still applies.
+function requiresFor(level: number): string {
+  const before = level > 1 ? prerequisitesAt(level - 1) : new Map<string, number>();
+  return (
+    [...prerequisitesAt(level).entries()]
+      .filter(([t, lvl]) => lvl > (before.get(t) ?? 0))
+      .map(([t, lvl]) => `${nameOf(t)} ${lvl}`)
+      .join(', ') || '-'
+  );
 }
 ---
 
@@ -73,8 +85,9 @@ function requiresFor(level: number): string {
 
 <h2 id="costs-by-level">Cost, requirements and build time by level</h2>
 <p>
-  The <strong>Requires</strong> column lists the buildings, and the level each must already have reached, before you can
-  upgrade to that level.{type !== 'stronghold' && ' A building can never be upgraded past your Stronghold level.'}
+  The <strong>New requirement</strong> column shows the building, and the level it must have reached, that is needed
+  for the first time (or at a higher level) when upgrading to that level. Everything required at lower levels still
+  applies.{type !== 'stronghold' && ' A building can never be upgraded past your Stronghold level.'}
 </p>
 <div class="building-table-wrap">
   <table>
@@ -82,7 +95,7 @@ function requiresFor(level: number): string {
       <tr>
         <th>Level</th>
         {usedResources.map((r) => <th>{r.label}</th>)}
-        <th>Requires</th>
+        <th>New requirement</th>
         <th>Build time</th>
         {effectKeys.map((k) => <th>{k}</th>)}
       </tr>
