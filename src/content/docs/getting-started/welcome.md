@@ -1,6 +1,8 @@
 ---
 title: Welcome
 description: A short introduction to Crowns of the Holy Land.
+sidebar:
+  order: 1
 ---
 
 Crowns of the Holy Land is a multiplayer kingdom-building strategy game. You start with a small stronghold, grow your economy, train armies and compete with other players on a shared world map.
@@ -13,6 +15,7 @@ The game is still in testing, so numbers and mechanics can change between versio
 
 ## Where to go next
 
+- [Setup](../setup/): install the game and create your account.
 - [Resources](../../game-systems/resources/): what you collect and spend.
 - [Buildings](../../buildings/): how your kingdom grows.
 - [Map and marching](../../game-systems/map-and-marching/): moving around the world.
